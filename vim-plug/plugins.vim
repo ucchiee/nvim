@@ -49,6 +49,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'unblevable/quick-scope'
   " terminal
   Plug 'voldikss/vim-floaterm'
+  " snippets
+  Plug 'honza/vim-snippets'
   call plug#end()
 
 autocmd VimEnter *

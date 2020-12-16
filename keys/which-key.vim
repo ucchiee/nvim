@@ -25,14 +25,14 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
+let g:which_key_map['F'] = [ ':Files'                     , 'search files' ]
+let g:which_key_map['g'] = [ ':FloatermNew lazygit'       , 'lazygit' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
-
 " s is for search
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
@@ -63,7 +63,7 @@ let g:which_key_map.s = {
       \ }
 
 " g is for git
-let g:which_key_map.g = {
+let g:which_key_map.G = {
       \ 'name' : '+git' ,
       \ 'a' : [':Git add .'                        , 'add all'],
       \ 'A' : [':CocCommand fzf-preview.GitStatus' , 'actions'],

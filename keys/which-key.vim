@@ -135,17 +135,17 @@ let g:which_key_map.l = {
 
 let g:which_key_map.j = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --floaterm_wintype="popup"'     , 'terminal'],
-      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ ';' : [':FloatermNew --floaterm_wintype="popup"'   , 'terminal'],
+      \ 'f' : [':FloatermNew fzf'                          , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                      , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                   , 'docker'],
+      \ 'n' : [':FloatermNew node'                         , 'node'],
+      \ 'N' : [':FloatermNew nnn'                          , 'nnn'],
+      \ 'p' : [':FloatermNew python'                       , 'python'],
+      \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
+      \ 't' : [':FloatermToggle'                           , 'toggle'],
+      \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
       \ }
 
 " Register which key map

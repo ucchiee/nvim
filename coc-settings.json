@@ -1,12 +1,14 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
-
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
-  "python.formatting.autopep8Args": ["--ignore=E501"],
+  "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": ["--ignore=E501"],
-  "python.linting.pep8Args": ["--ignore=E501"],
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": ["--ignore=E501"],
+  "python.jediEnabled": false,
+  "python.venvPath": "~/.pyenv",
 
   "snippets.ultisnips.directories":
   [

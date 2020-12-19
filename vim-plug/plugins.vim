@@ -51,6 +51,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'voldikss/vim-floaterm'
   " snippets
   Plug 'honza/vim-snippets'
+  " pydocstring
+  Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
   call plug#end()
 
 autocmd VimEnter *

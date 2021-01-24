@@ -6,9 +6,10 @@ let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ ]
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/i3/config' },
+            \ { 't': '~/.tmux.conf' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
+            \ { 'a': '~/.config/alacritty/alacritty.yml' },
             \ '~/Documents',
             \ ]
 let g:startify_session_autoload = 1

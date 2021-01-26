@@ -16,7 +16,7 @@ inoremap kk <Esc>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUwi
-nnoremap <c-u> viwUw<Esc>
+" nnoremap <c-u> viwUw<Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>

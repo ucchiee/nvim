@@ -1,0 +1,4 @@
+# nvim
+
+# LISENCE
+MIT

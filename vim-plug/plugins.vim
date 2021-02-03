@@ -48,7 +48,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " quick-scope
   Plug 'unblevable/quick-scope'
   " terminal
-  Plug 'voldikss/vim-floaterm'
+  Plug 'voldikss/vim-floaterm', {'commit': '74d33de'}
   " snippets
   Plug 'honza/vim-snippets'
   " pydocstring

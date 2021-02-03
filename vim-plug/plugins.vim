@@ -52,7 +52,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " snippets
   Plug 'honza/vim-snippets'
   " pydocstring
-  Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+  " Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
   " surround
   Plug 'tpope/vim-surround'
   call plug#end()

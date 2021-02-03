@@ -135,7 +135,7 @@ let g:which_key_map.l = {
 
 let g:which_key_map.j = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype="popup"'      , 'terminal'],
+      \ ';' : [':FloatermNew '                       , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                    , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                , 'git'],
       \ 'd' : [':FloatermNew lazydocker'             , 'docker'],

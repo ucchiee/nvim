@@ -6,11 +6,11 @@ let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ ]
 let g:startify_bookmarks = [
-            \ { 't': '~/.tmux.conf' },
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
             \ { 'a': '~/.config/alacritty/alacritty.yml' },
-            \ '~/Documents',
+            \ { 'd': '~/dotfiles/Makefile' },
+            \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 't': '~/.tmux.conf' },
+            \ { 'z': '~/.zshrc' },
             \ ]
 let g:startify_session_autoload = 1
 let g:startify_change_to_vcs_root = 1

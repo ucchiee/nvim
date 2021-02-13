@@ -1,27 +1,45 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python"
+  ],
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--max-line-length", "88", "--ignore=E402"],
+  "python.linting.flake8Args": [
+    "--max-line-length",
+    "88",
+    "--ignore=E402"
+  ],
   "python.formatting.provider": "black",
   "python.sortImports.path": "isort",
-  "python.sortImports.args": ["--profile", "black"],
+  "python.sortImports.args": [
+    "--profile",
+    "black"
+  ],
   "python.jediEnabled": false,
   "python.venvPath": "~/.pyenv",
-
-  "snippets.ultisnips.directories":
-  [
+  "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
   ],
   // explorer
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": "labeling",
+  "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
-    "<cr>": ["expandable?", "expand", "open"],
+    "<cr>": [
+      "expandable?",
+      "expand",
+      "open"
+    ],
     "v": "open:vsplit"
-    }
+  }
 }

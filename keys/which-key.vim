@@ -135,7 +135,8 @@ let g:which_key_map.l = {
 
 let g:which_key_map.j = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew '                       , 'terminal'],
+      \ ';' : [':FloatermNew'                        , 'terminal'],
+      \ 'l' : [":FloatermNew --autoclose=0 python %" , 'python %'],
       \ 'f' : [':FloatermNew fzf'                    , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                , 'git'],
       \ 'd' : [':FloatermNew lazydocker'             , 'docker'],

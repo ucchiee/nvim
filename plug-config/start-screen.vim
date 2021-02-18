@@ -8,7 +8,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
             \ { 'a': '~/dotfiles/.config/alacritty/alacritty.yml' },
             \ { 'd': '~/dotfiles/Makefile' },
-            \ { 'i': '~/dotfiles/.config/nvim/init.vim' },
+            \ { 'i': '~/.config/nvim/init.vim' },
             \ { 't': '~/dotfiles/.tmux.conf' },
             \ { 'z': '~/dotfiles/.zshrc' },
             \ ]

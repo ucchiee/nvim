@@ -55,6 +55,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
   " surround
   Plug 'tpope/vim-surround'
+  " vim-repeat
+  Plug 'tpope/vim-repeat'
   call plug#end()
 
 autocmd VimEnter *

@@ -52,11 +52,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " snippets
   Plug 'honza/vim-snippets'
   " pydocstring
-  " Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+  Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
   " surround
   Plug 'tpope/vim-surround'
   " vim-repeat
   Plug 'tpope/vim-repeat'
+  " show indent
+  Plug 'Yggdroot/indentLine'
   call plug#end()
 
 autocmd VimEnter *

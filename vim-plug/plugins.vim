@@ -59,6 +59,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat'
   " show indent
   Plug 'Yggdroot/indentLine'
+  " textobj
+  Plug 'kana/vim-textobj-user' 
+  Plug 'kana/vim-textobj-entire' 
   call plug#end()
 
 autocmd VimEnter *

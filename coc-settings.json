@@ -20,8 +20,8 @@
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
-  "python.formatting.provider": "black",
-  /* "python.formatting.provider": "autopep8", */
+  /* "python.formatting.provider": "black", */
+  "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
     "--ignore=E501"
   ],

@@ -13,7 +13,6 @@ inoremap kj <Esc>
 inoremap jj <Esc>
 inoremap kk <Esc>
 
-
 " Easy CAPS
 inoremap <c-u> <ESC>viwUwi
 " nnoremap <c-u> viwUw<Esc>
@@ -40,3 +39,7 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+" better command line filtering
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>

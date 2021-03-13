@@ -72,7 +72,7 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-" use <Leader>ld, <Leader>lt, <Leader>li, <Leader>lr instead
+" Use <Leader>ld, <Leader>lt, <Leader>li, <Leader>lr instead
 " nmap <silent> gd <Plug>(coc-definition)
 " nmap <silent> gy <Plug>(coc-type-definition)
 " nmap <silent> gi <Plug>(coc-implementation)

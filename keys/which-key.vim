@@ -135,18 +135,19 @@ let g:which_key_map.l = {
 
 let g:which_key_map.j = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew'                        , 'terminal'],
-      \ 'l' : [":FloatermNew --autoclose=0 python %" , 'python %'],
-      \ 'f' : [':FloatermNew fzf'                    , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'             , 'docker'],
-      \ 'n' : [':FloatermNew node'                   , 'node'],
-      \ 'N' : [':FloatermNew nnn'                    , 'nnn'],
-      \ 'p' : [':FloatermNew python'                 , 'python'],
-      \ 'r' : [':FloatermNew ranger'                 , 'ranger'],
-      \ 't' : [':FloatermToggle'                     , 'toggle'],
-      \ 'b' : [':FloatermNew btm'                    , 'bottom'],
-      \ 's' : [':FloatermNew ncdu'                   , 'ncdu'],
+      \ ';' : [':FloatermNew'                                    , 'terminal'],
+      \ 'l' : [":FloatermNew --autoclose=0 python %"             , 'python %'],
+      \ 'x' : [":FloatermNew --autoclose=0 python -m cProfile %" , 'python -m Cprofile %'],
+      \ 'f' : [':FloatermNew fzf'                                , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                            , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                         , 'docker'],
+      \ 'n' : [':FloatermNew node'                               , 'node'],
+      \ 'N' : [':FloatermNew nnn'                                , 'nnn'],
+      \ 'p' : [':FloatermNew python'                             , 'python'],
+      \ 'r' : [':FloatermNew ranger'                             , 'ranger'],
+      \ 't' : [':FloatermToggle'                                 , 'toggle'],
+      \ 'b' : [':FloatermNew btm'                                , 'bottom'],
+      \ 's' : [':FloatermNew ncdu'                               , 'ncdu'],
       \ }
 
 " Register which key map

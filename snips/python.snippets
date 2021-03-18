@@ -1,0 +1,81 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet nagase.dir "dir"
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(ROOT_DIR, "output", now)
+INPUT_DIR = os.path.join(ROOT_DIR, "input")
+CSV_INPUT_DIR = os.path.join(ROOT_DIR, "csv_here")
+LOG_DIR = os.path.join(ROOT_DIR, "log")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(INPUT_DIR, exist_ok=True)
+os.makedirs(CSV_INPUT_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+endsnippet
+snippet read_data "read_data"
+def read_data(input_path, encoding):
+    # 拡張子によって読み込み方法を変える
+    ext = os.path.splitext(input_path)[1]
+    if ext == ".csv":
+        func_read = pd.read_csv
+    elif ext == ".xls" or ext == ".xlsx":
+        func_read = pd.read_excel
+
+    # 試験種情報の読み込み
+    try:
+        df = func_read(input_path, encoding=encoding, dtype=str)
+    except UnicodeDecodeError:
+        try:
+            df = func_read(input_path, encoding="utf-8", dtype=str)
+        except UnicodeDecodeError:
+            try:
+                df = func_read(input_path, encoding="cp932", dtype=str)
+            except UnicodeDecodeError:
+                input("文字コードエラー：文字コードを見直してください。\nEnterを押して終了します。")
+                exit(-1)
+    return df
+endsnippet
+snippet setup_logger "setup_logger"
+from logging import DEBUG, INFO, FileHandler, Formatter, StreamHandler, getLogger
+def setup_logger(log_path, modname=__name__):
+    logger = getLogger(modname)
+    logger.setLevel(DEBUG)
+
+    sh = StreamHandler()
+    sh.setLevel(INFO)
+    formatter = Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    sh.setFormatter(formatter)
+    logger.addHandler(sh)
+
+    fh = FileHandler(log_path)  # fh = file handler
+    fh.setLevel(DEBUG)
+    fh_formatter = Formatter(
+        "%(asctime)s - %(filename)s - %(name)s - %(lineno)d - %(levelname)s - %(message)s"
+    )
+    fh.setFormatter(fh_formatter)
+    logger.addHandler(fh)
+    return logger
+endsnippet

@@ -47,7 +47,3 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 " expand current abs path of current directory
 cnoremap <<expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
-
-" Use AG in VisualStarSearch
-nnoremap <leader>* :call ag#Ag('grep', '--literal ' . shellescape(expand("<cword>")))<CR>
-vnoremap <leader>* :<C-u>call VisualStarSearchSet('/', 'raw')<CR>:call ag#Ag('grep', '--literal ' . shellescape(@/))<CR>

@@ -3,10 +3,10 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-nnoremap <silent> <M-j>    :resize -2<CR>
+nnoremap <silent> <M-j>  :resize -2<CR>
 nnoremap <silent> <M-k>  :resize +2<CR>
 nnoremap <silent> <M-h>  :vertical resize -2<CR>
-nnoremap <silent> <M-l> :vertical resize +2<CR>
+nnoremap <silent> <M-l>  :vertical resize +2<CR>
 " I hate escape more than anything else
 inoremap jk <Esc>
 inoremap kj <Esc>
@@ -47,3 +47,7 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 " expand current abs path of current directory
 cnoremap <<expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
+
+" Use AG in VisualStarSearch
+nnoremap <leader>* :call ag#Ag('grep', '--literal ' . shellescape(expand("<cword>")))<CR>
+vnoremap <leader>* :<C-u>call VisualStarSearchSet('/', 'raw')<CR>:call ag#Ag('grep', '--literal ' . shellescape(@/))<CR>

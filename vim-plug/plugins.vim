@@ -57,6 +57,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-surround'
   " vim-repeat
   Plug 'tpope/vim-repeat'
+  " vim-abolish
+  " Plug 'tpope/vim-abolish'
   " show indent
   Plug 'Yggdroot/indentLine'
   " textobj

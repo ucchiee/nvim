@@ -36,7 +36,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'junegunn/rainbow_parentheses.vim'
   " startify
   Plug 'mhinz/vim-startify'
-  " Gif
+  " Git
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
@@ -55,7 +55,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
   " surround
   Plug 'tpope/vim-surround'
-  " vim-repeat
   Plug 'tpope/vim-repeat'
   " vim-abolish
   " Plug 'tpope/vim-abolish'

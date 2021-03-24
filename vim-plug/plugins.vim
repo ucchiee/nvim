@@ -65,8 +65,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kana/vim-textobj-entire'
   " visual start search
   Plug 'bronson/vim-visual-star-search'
-  " zen
-  Plug 'junegunn/goyo.vim'
   call plug#end()
 
 autocmd VimEnter *

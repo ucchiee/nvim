@@ -56,6 +56,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " surround
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
+  " key bindings for move
+  Plug 'tpope/vim-unimpaired'
   " vim-abolish
   " Plug 'tpope/vim-abolish'
   " show indent

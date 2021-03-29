@@ -17,10 +17,12 @@ inoremap kk <Esc>
 inoremap <c-u> <ESC>viwUwi
 " nnoremap <c-u> viwUw<Esc>
 
-" TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
+" <C-l> in general mode will move to text buffer
+nnoremap <C-l> :bnext<CR>
+nnoremap <S-Right> :blast<CR>
+" <C-h> go back
+nnoremap <C-h> :bprevious<CR>
+nnoremap <S-Left> :bfirst<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -32,11 +34,12 @@ nnoremap <C-c> <Esc>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-l> <C-w>l
 
+" Useful bindings
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 noremap <Leader>n nzz

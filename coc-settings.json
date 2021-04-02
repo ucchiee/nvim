@@ -20,16 +20,17 @@
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
-  /* "python.formatting.provider": "black", */
-  "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Args": [
-    "--ignore=E501"
-  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["-l", "150"],
+  /* "python.formatting.provider": "autopep8", */
+  /* "python.formatting.autopep8Args": [ */
+  /*   "--ignore=E501" */
+  /* ], */
   "python.jediEnabled": false,
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
-    "88",
+    "120",
     "--ignore=E402,E203,E501,W503"
   ],
   "python.linting.flake8Enabled": true,

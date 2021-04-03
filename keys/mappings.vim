@@ -33,12 +33,6 @@ nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better window navigation
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-l> <C-w>l
-
 " Useful bindings
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da

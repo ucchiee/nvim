@@ -48,4 +48,4 @@ let g:airline_mode_map = {
 set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
-set noshowmode
+" set noshowmode

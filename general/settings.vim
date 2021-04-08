@@ -33,6 +33,8 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set ignorecase                          " Ignore case
+set smartcase                           " Override ignore case for mixed case searches
 "set autochdir                          " Your working directory will always be the same as your working directory
 " set spell                               " Enables spell check
 " set complete+=k                         " Enables completion by spell dictionary

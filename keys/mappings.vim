@@ -38,8 +38,8 @@ nnoremap <Leader>O O<Esc>^Da
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
 
-" better command line filtering
+" Better command line filtering
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
-" expand current abs path of current directory
+" Expand current abs path of current directory
 cnoremap <<expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'

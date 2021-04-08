@@ -13,6 +13,7 @@ inoremap kj <Esc>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viw~ea
+inoremap <c-y> <ESC>b~ea
 " nnoremap <c-u> viwUw<Esc>
 
 " <C-l> in general mode will move to text buffer

@@ -12,7 +12,8 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 
 " Easy CAPS
-inoremap <c-u> <ESC>viwUwi
+inoremap <c-u> <ESC>viw~ea
+inoremap <c-y> <ESC>b~ea
 " nnoremap <c-u> viwUw<Esc>
 
 " <C-l> in general mode will move to text buffer
@@ -37,8 +38,8 @@ nnoremap <Leader>O O<Esc>^Da
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
 
-" better command line filtering
+" Better command line filtering
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
-" expand current abs path of current directory
+" Expand current abs path of current directory
 cnoremap <<expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'

@@ -1,8 +1,7 @@
 " https://github.com/edkolev/tmuxline.vim
 let g:airline#extensions#tmuxline#enabled = 0
 let g:tmuxline_theme = 'onedark'
-" set-option -g status-left '#[fg=cyan,bg=#303030]#{?client_prefix,#[fg=black]#[bg=yellow],} #h[#S] #[default]'
-" set-option -g status-right '#(get_load_average_tmux)#(get_volume_tmux)#(get_battery_tmux)#(get_ssid_tmux)#[fg=colour014] [%Y-%m-%d(%a) %H:%M:%S] #[default]'
+
 let g:tmuxline_preset = {
       \'a'    : '%Y-%m-%d(%a) %H:%M:%S',
       \'b'    : '#S',

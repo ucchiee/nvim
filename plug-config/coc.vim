@@ -1,5 +1,5 @@
 " Extentions
-let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-snippets', 'coc-marketplace', 'coc-explorer', 'coc-python', 'coc-sh']
+let g:coc_global_extensions = ['coc-vimlsp', 'coc-json', 'coc-snippets', 'coc-marketplace', 'coc-explorer', 'coc-pyright', 'coc-sh']
 
 " Explorer
 let g:coc_explorer_global_presets = {

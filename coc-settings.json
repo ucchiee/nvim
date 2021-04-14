@@ -20,26 +20,24 @@
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
+  "python.pythonPath": "python",
+  "python.venvPath": "~/.pyenv",
+  "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
     "-l",
-    "150"
+    "120"
   ],
-  "python.formatting.provider": "black",
-  "python.jediEnabled": false,
   "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
     "120",
     "--ignore=E402,E203,E501,W503"
   ],
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false,
   "python.sortImports.args": [
     "--profile",
     "black"
   ],
-  "python.sortImports.path": "isort",
-  "python.venvPath": "~/.pyenv",
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/snips"

@@ -38,6 +38,7 @@
     "--profile",
     "black"
   ],
+  "pyright.disableSelfClsNotAccessed": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/snips"

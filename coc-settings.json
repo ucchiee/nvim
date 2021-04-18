@@ -29,6 +29,7 @@
     "120"
   ],
   "python.linting.enabled": true,
+  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
@@ -41,6 +42,7 @@
     "black"
   ],
   "pyright.disableSelfClsNotAccessed": true,
+  "pyright.disableDiagnostics": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/snips"

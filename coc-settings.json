@@ -23,6 +23,7 @@
   "python.pythonPath": "python",
   "python.venvPath": "~/.pyenv",
   "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.blackArgs": [
     "-l",
     "120"
@@ -34,6 +35,7 @@
     "120",
     "--ignore=E402,E203,E501,W503"
   ],
+  "python.sortImports.path": "~/.pyenv/shims/isort",
   "python.sortImports.args": [
     "--profile",
     "black"

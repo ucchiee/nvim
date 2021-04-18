@@ -21,7 +21,7 @@
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
   "python.pythonPath": "python",
-  "python.venvPath": "~/.pyenv",
+  "python.venvPath": ".env",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.blackArgs": [

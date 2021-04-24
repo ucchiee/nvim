@@ -74,5 +74,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 autocmd VimEnter *
   \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall | q
+  \|   PlugInstall
   \| endif

@@ -144,6 +144,7 @@ let g:which_key_map.j = {
       \ 'n' : [':FloatermNew node'                               , 'node'],
       \ 'N' : [':FloatermNew nnn'                                , 'nnn'],
       \ 'p' : [':FloatermNew python'                             , 'python'],
+      \ 'i' : [':FloatermNew ipython'                            , 'ipython'],
       \ 'r' : [':FloatermNew ranger'                             , 'ranger'],
       \ 't' : [':FloatermToggle'                                 , 'toggle'],
       \ 'b' : [':FloatermNew btm'                                , 'bottom'],

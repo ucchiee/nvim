@@ -33,8 +33,8 @@ nnoremap <C-c> <Esc>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Useful bindings
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+nnoremap <Leader>o o<Esc>^C
+nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
 

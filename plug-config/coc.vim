@@ -1,12 +1,12 @@
 " Extentions
 let g:coc_global_extensions = [
-      \'coc-vimlsp',
-      \'coc-json',
-      \'coc-snippets',
-      \'coc-marketplace',
       \'coc-explorer',
+      \'coc-json',
+      \'coc-marketplace',
       \'coc-pyright',
       \'coc-sh'
+      \'coc-snippets',
+      \'coc-vimlsp',
       \]
 
 " Explorer

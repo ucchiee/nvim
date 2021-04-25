@@ -24,24 +24,24 @@ let g:airline_theme = 'onedark'
 
 " Shortform mode text
 let g:airline_mode_map = {
+    \ ''     : 'S',
+    \ ''     : 'C-V',
+    \ 'R'      : 'R',
+    \ 'Rv'     : 'R',
+    \ 'S'      : 'S',
+    \ 'V'      : 'V',
     \ '__'     : '-',
     \ 'c'      : 'C',
     \ 'i'      : 'I',
     \ 'ic'     : 'I',
     \ 'ix'     : 'I',
-    \ 'n'      : 'N',
     \ 'multi'  : 'M',
+    \ 'n'      : 'N',
     \ 'ni'     : 'N',
     \ 'no'     : 'N',
-    \ 'R'      : 'R',
-    \ 'Rv'     : 'R',
     \ 's'      : 'S',
-    \ 'S'      : 'S',
-    \ ''     : 'S',
     \ 't'      : 'T',
     \ 'v'      : 'v',
-    \ 'V'      : 'V',
-    \ ''     : 'C-V',
     \ }
 
 " Always show tabs

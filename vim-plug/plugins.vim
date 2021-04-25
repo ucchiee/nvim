@@ -69,7 +69,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kana/vim-textobj-entire'
   " visual start search
   Plug 'bronson/vim-visual-star-search'
-  call plug#end()
+call plug#end()
 
 autocmd VimEnter *
   \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))

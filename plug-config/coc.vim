@@ -4,9 +4,9 @@ let g:coc_global_extensions = [
       \'coc-json',
       \'coc-marketplace',
       \'coc-pyright',
-      \'coc-sh'
+      \'coc-sh',
       \'coc-snippets',
-      \'coc-vimlsp',
+      \'coc-vimlsp'
       \]
 
 " Explorer

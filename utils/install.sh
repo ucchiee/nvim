@@ -99,8 +99,7 @@ pip3 list | grep pynvim >/dev/null && echo "pynvim installed, moving on..." || i
 # clone config
 if [ -a "$HOME/.config/nvim/init.vim" ]; then
   echo "There's already your init.vim"
-  echo "Updating plugins"
-  nvim -c PlugInstall -c qall
+  echo "Move that first."
 else
   clone_config
 fi

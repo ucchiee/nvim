@@ -17,7 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Theme
   Plug 'joshdick/onedark.vim'
   " Tmuxline
-  Plug 'edkolev/tmuxline.vim'
+  Plug 'edkolev/tmuxline.vim', { 'on': ['Tmuxline', 'TmuxlineSimple', 'TmuxlineSnapshot'] }
   " Stable version of coc
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " Airline

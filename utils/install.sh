@@ -3,6 +3,10 @@
 set -o nounset
 set -o errexit
 
+installpyenv() {
+  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+}
+
 installpip() {
   # install pyenv? pipenv?
   echo "Install python3 first."

@@ -79,3 +79,7 @@ def setup_logger(log_path, modname=__name__):
     logger.addHandler(fh)
     return logger
 endsnippet
+snippet now "now"
+import datetime
+now = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+endsnippet

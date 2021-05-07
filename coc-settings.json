@@ -1,4 +1,6 @@
 {
+  "clangd.enabled": true,
+  "clangd.path": "/home/uu/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -20,29 +22,29 @@
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
-  "python.pythonPath": "python",
-  "python.venvPath": ".env",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.pyenv/shims/black",
+  "pyright.disableDiagnostics": true,
+  "pyright.disableSelfClsNotAccessed": true,
   "python.formatting.blackArgs": [
     "-l",
     "120"
   ],
+  "python.formatting.blackPath": "~/.pyenv/shims/black",
+  "python.formatting.provider": "black",
   "python.linting.enabled": true,
-  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
-  "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
     "120",
     "--ignore=E402,E203,E501,W503"
   ],
-  "python.sortImports.path": "~/.pyenv/shims/isort",
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+  "python.pythonPath": "python",
   "python.sortImports.args": [
     "--profile",
     "black"
   ],
-  "pyright.disableSelfClsNotAccessed": true,
-  "pyright.disableDiagnostics": true,
+  "python.sortImports.path": "~/.pyenv/shims/isort",
+  "python.venvPath": ".env",
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/snips"

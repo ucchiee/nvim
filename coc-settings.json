@@ -9,7 +9,8 @@
     "html",
     "yaml",
     "json",
-    "python"
+    "python",
+    "cpp"
   ],
   "explorer.icon.enableNerdfont": true,
   "explorer.keyMappings.global": {
@@ -34,7 +35,8 @@
   "python.linting.flake8Args": [
     "--max-line-length",
     "120",
-    "--ignore=E402,E203,E501,W503"
+    "--ignore=E402,E203,E501,W503",
+    "--exclude=__init__.py"
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",

@@ -10,8 +10,8 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <leader>d :Files<CR>
-map <leader>b :Buffers<CR>
+nnoremap <leader>d :Files<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>T :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>M :Marks<CR>

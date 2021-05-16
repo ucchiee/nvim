@@ -6,8 +6,9 @@ let g:coc_global_extensions = [
       \'coc-pyright',
       \'coc-sh',
       \'coc-snippets',
-      \'coc-vimlsp',
       \'coc-prettier'
+      \'coc-clangd',
+      \'coc-vimlsp'
       \]
 
 let g:coc_markdown_disabled_languages = ['html', 'md', 'markdown']

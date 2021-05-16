@@ -6,7 +6,7 @@ let g:coc_global_extensions = [
       \'coc-pyright',
       \'coc-sh',
       \'coc-snippets',
-      \'coc-prettier'
+      \'coc-prettier',
       \'coc-clangd',
       \'coc-vimlsp'
       \]

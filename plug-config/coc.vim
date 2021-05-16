@@ -6,8 +6,11 @@ let g:coc_global_extensions = [
       \'coc-pyright',
       \'coc-sh',
       \'coc-snippets',
-      \'coc-vimlsp'
+      \'coc-vimlsp',
+      \'coc-prettier'
       \]
+
+let g:coc_markdown_disabled_languages = ['html', 'md', 'markdown']
 
 " Explorer
 let g:coc_explorer_global_presets = {

@@ -6,6 +6,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   let g:is_init=1
 endif
 
+let g:polyglot_disabled = ['markdown']
+
 call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Better Syntax Support

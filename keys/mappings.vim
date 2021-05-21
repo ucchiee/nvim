@@ -17,11 +17,11 @@ inoremap <c-y> <ESC>b~gi
 " nnoremap <c-u> viwUw<Esc>
 
 " <C-l> in general mode will move to text buffer
-nnoremap <C-l> :bnext<CR>
+nnoremap <C-l>     :bnext<CR>
 nnoremap <S-Right> :blast<CR>
 " <C-h> go back
-nnoremap <C-h> :bprevious<CR>
-nnoremap <S-Left> :bfirst<CR>
+nnoremap <C-h>     :bprevious<CR>
+nnoremap <S-Left>  :bfirst<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>

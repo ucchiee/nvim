@@ -29,7 +29,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kevinhwang91/rnvimr'
   " Comment out
   Plug 'tpope/vim-commentary'
-  Plug 'tyru/caw.vim'
   " fzf
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'

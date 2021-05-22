@@ -37,10 +37,10 @@ nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
 " Move lines
-nnoremap \| :m .-2<CR>==
-nnoremap \ :m .+1<CR>==
-vnoremap \| :m '<-2<CR>gv=gv
-vnoremap \ :m '>+1<CR>gv=gv
+nnoremap \| :m .-2<CR>
+nnoremap \  :m .+1<CR>
+vnoremap \| :m '<-2<CR>gv
+vnoremap \  :m '>+1<CR>gv
 
 " Better command line filtering
 cnoremap <C-p> <Up>

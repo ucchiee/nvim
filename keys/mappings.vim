@@ -14,7 +14,6 @@ inoremap jk <Esc>
 " Easy CAPS
 inoremap <c-u> <ESC>viw~gi
 inoremap <c-y> <ESC>b~gi
-" nnoremap <c-u> viwUw<Esc>
 
 " <C-l> in general mode will move to text buffer
 nnoremap <C-l>     :bnext<CR>

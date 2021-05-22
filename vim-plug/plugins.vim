@@ -62,10 +62,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat'
   " key bindings for move
   Plug 'tpope/vim-unimpaired'
-  " vim-abolish
-  " Plug 'tpope/vim-abolish'
   " show indent
-  Plug 'Yggdroot/indentLine'
+  Plug 'nathanaelkane/vim-indent-guides'
   " textobj
   Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-entire'

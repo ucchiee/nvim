@@ -10,7 +10,8 @@ let g:startify_bookmarks = [
             \ { 'd': '~/dotfiles/Makefile' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 't': '~/dotfiles/.tmux.conf' },
-            \ { 'z': '~/dotfiles/.zshrc' },
+            \ { 'v': '~/dotfiles/.vimrc' },
+            \ { 'z': '~/dotfiles/zsh/.zshrc' },
             \ ]
 let g:startify_session_autoload = 1
 let g:startify_change_to_vcs_root = 1

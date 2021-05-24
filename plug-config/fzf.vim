@@ -10,11 +10,11 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-nnoremap <leader>d :Files<CR>
+nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>T :Rg<CR>
-nnoremap <leader>t :Tags<CR>
-nnoremap <leader>M :Marks<CR>
+nnoremap <leader>t :Rg<CR>
+nnoremap <leader>T :Tags<CR>
+nnoremap <leader>m :Marks<CR>
 
 
 let g:fzf_tags_command = 'ctags -R'

@@ -9,6 +9,7 @@ let g:startify_bookmarks = [
             \ { 'a': '~/dotfiles/.config/alacritty/alacritty.yml' },
             \ { 'd': '~/dotfiles/Makefile' },
             \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 's': '~/dotfiles/simple.vimrc' },
             \ { 't': '~/dotfiles/.tmux.conf' },
             \ { 'v': '~/dotfiles/.vimrc' },
             \ { 'z': '~/dotfiles/zsh/.zshrc' },

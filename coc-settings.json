@@ -38,6 +38,7 @@
     "--ignore=E402,E203,E501,W503",
     "--exclude=__init__.py"
   ],
+  "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
   "python.pythonPath": "python",
@@ -45,7 +46,7 @@
     "--profile",
     "black"
   ],
-  "python.sortImports.path": "~/.pyenv/shims/isort",
+  "python.sortImports.path": "",
   "python.venvPath": ".env",
   "snippets.ultisnips.directories": [
     "UltiSnips",

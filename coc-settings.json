@@ -31,6 +31,7 @@
   ],
   "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.provider": "black",
+  "python.jediEnabled": false,
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",

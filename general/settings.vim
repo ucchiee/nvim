@@ -30,7 +30,7 @@ set smarttab                            " Makes tabbing smarter will realize you
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
-set tabstop=2                           " Insert 2 spaces for a tab
+set tabstop=4                           " Insert 4 spaces for a tab
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
 syntax enable                           " Enables syntax highlighing

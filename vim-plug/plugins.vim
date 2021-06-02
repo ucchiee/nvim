@@ -67,7 +67,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-entire'
   " visual start search
-  " Plug 'bronson/vim-visual-star-search'
+  Plug 'bronson/vim-visual-star-search'
   " html
   " Plug 'mattn/emmet-vim'
 call plug#end()

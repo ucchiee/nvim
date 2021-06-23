@@ -12,7 +12,7 @@ let g:startify_bookmarks = [
             \ { 's': '~/dotfiles/simple.vimrc' },
             \ { 't': '~/dotfiles/.tmux.conf' },
             \ { 'v': '~/dotfiles/.vimrc' },
-            \ { 'z': '~/dotfiles/zsh/.zshrc' },
+            \ { 'z': '~/dotfiles/zsh/zshrc' },
             \ ]
 let g:startify_session_autoload = 1
 let g:startify_change_to_vcs_root = 1

@@ -10,28 +10,23 @@
     "yaml",
     "json",
     "python",
+    "shellscript",
+    "zsh",
     "cpp"
   ],
   "explorer.icon.enableNerdfont": true,
   "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
+    "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
   "pyright.disableDiagnostics": true,
-  "pyright.disableSelfClsNotAccessed": true,
-  "python.formatting.blackArgs": [
-    "-l",
-    "120"
-  ],
+  /* "pyright.disableSelfClsNotAccessed": true, */
+  "python.formatting.blackArgs": ["-l", "120"],
   "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.provider": "black",
-  "python.jediEnabled": false,
+  /* "python.jediEnabled": false, */
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
@@ -43,14 +38,30 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
   "python.pythonPath": "python",
-  "python.sortImports.args": [
-    "--profile",
-    "black"
-  ],
+  "python.sortImports.args": ["--profile", "black"],
   "python.sortImports.path": "",
   "python.venvPath": ".env",
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/snips"
-  ]
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
+  "diagnostic-languageserver.filetypes": {
+    // lint `sh` (includes `bash`) files
+    "sh": "shellcheck",
+    "zsh": "shellcheck"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    // format `sh` (includes `bash`) files using formatter defined below
+    "sh": "shfmt",
+    "zsh": "shfmt"
+  },
+  "diagnostic-languageserver.formatters": {
+    // define our formatter so that we can reference it from
+    // `diagnostic-languageserver.formatFiletypes`
+    "shfmt": {
+      "command": "shfmt",
+      // all the below args are entirely optional
+      // primarily listed here to call out that flags which take an
+      // argument (such as `-i <num-spaces>` for specifying indentation)
+      // should be split into two strings, the flag and then the value
+      "args": ["-i", "4", "-ci", "-sr", "-s"]
+    }
+  }
 }

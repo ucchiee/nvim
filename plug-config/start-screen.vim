@@ -7,6 +7,7 @@ let g:startify_lists = [
           \ ]
 let g:startify_bookmarks = [
             \ { 'a': '~/.config/alacritty/alacritty.yml' },
+            \ { 'c': '~/.config/nvim/coc-settings.json' },
             \ { 'd': '~/dotfiles/Makefile' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 's': '~/simple.vimrc' },

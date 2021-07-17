@@ -1,6 +1,5 @@
 " Extentions
 let g:coc_global_extensions = [
-      \'coc-explorer',
       \'coc-json',
       \'coc-marketplace',
       \'coc-pyright',
@@ -12,45 +11,6 @@ let g:coc_global_extensions = [
       \]
 
 let g:coc_markdown_disabled_languages = ['html', 'md', 'markdown']
-
-" Explorer
-let g:coc_explorer_global_presets = {
-\   '.vim': {
-\     'root-uri': '~/.vim',
-\   },
-\   'tab': {
-\     'position': 'tab',
-\     'quit-on-open': v:true,
-\   },
-\   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingTop': {
-\     'position': 'floating',
-\     'floating-position': 'center-top',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingLeftside': {
-\     'position': 'floating',
-\     'floating-position': 'left-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingRightside': {
-\     'position': 'floating',
-\     'floating-position': 'right-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'simplify': {
-\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-\   }
-\ }
-
-nmap <space>e :CocCommand explorer<CR>
-nmap <space>F :CocCommand explorer --preset floating<CR>
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by

@@ -42,11 +42,6 @@
   "python.sortImports.path": "",
   "python.venvPath": ".env",
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
-  "diagnostic-languageserver.filetypes": {
-    // lint `sh` (includes `bash`) files
-    "sh": "shellcheck",
-    "zsh": "shellcheck"
-  },
   "diagnostic-languageserver.formatFiletypes": {
     // format `sh` (includes `bash`) files using formatter defined below
     "sh": "shfmt",

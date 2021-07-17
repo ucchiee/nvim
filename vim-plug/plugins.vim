@@ -13,8 +13,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Better Syntax Support
   Plug 'sheerun/vim-polyglot'
   " File Explorer
-  Plug 'scrooloose/NERDTree'
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'kyazdani42/nvim-web-devicons' " for file icons
+  Plug 'kyazdani42/nvim-tree.lua'
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Theme

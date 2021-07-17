@@ -91,8 +91,8 @@ lua <<EOF
   vim.g.nvim_tree_bindings = {
     { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
     { key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
-    { key = "<C-v>",                        cb = tree_cb("vsplit") },
-    { key = "<C-x>",                        cb = tree_cb("split") },
+    { key = "v",                            cb = tree_cb("vsplit") },
+    { key = "s",                            cb = tree_cb("split") },
     { key = "<C-t>",                        cb = tree_cb("tabnew") },
     { key = "<",                            cb = tree_cb("prev_sibling") },
     { key = ">",                            cb = tree_cb("next_sibling") },
@@ -102,7 +102,7 @@ lua <<EOF
     { key = "<Tab>",                        cb = tree_cb("preview") },
     { key = "K",                            cb = tree_cb("first_sibling") },
     { key = "J",                            cb = tree_cb("last_sibling") },
-    { key = "I",                            cb = tree_cb("toggle_ignored") },
+    { key = "g.",                           cb = tree_cb("toggle_ignored") },
     { key = "H",                            cb = tree_cb("toggle_dotfiles") },
     { key = "R",                            cb = tree_cb("refresh") },
     { key = "a",                            cb = tree_cb("create") },
@@ -119,6 +119,6 @@ lua <<EOF
     { key = "]c",                           cb = tree_cb("next_git_item") },
     { key = "-",                            cb = tree_cb("dir_up") },
     { key = "q",                            cb = tree_cb("close") },
-    { key = "?",                           cb = tree_cb("toggle_help") },
+    { key = "?",                            cb = tree_cb("toggle_help") },
   }
 EOF

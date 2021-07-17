@@ -93,7 +93,7 @@ lua <<EOF
     { key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
     { key = "v",                            cb = tree_cb("vsplit") },
     { key = "s",                            cb = tree_cb("split") },
-    { key = "<C-t>",                        cb = tree_cb("tabnew") },
+    { key = "t",                        cb = tree_cb("tabnew") },
     { key = "<",                            cb = tree_cb("prev_sibling") },
     { key = ">",                            cb = tree_cb("next_sibling") },
     { key = "P",                            cb = tree_cb("parent_node") },

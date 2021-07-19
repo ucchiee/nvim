@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'sheerun/vim-polyglot'
   " File Explorer
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
-  Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'kyazdani42/nvim-tree.lua', {'dommit': 'fd7f60e242205ea9efc9649101c81a07d5f458bb'}
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Theme

@@ -37,7 +37,7 @@ let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 " s is for search
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
-      \ '/' : [':History/'     , 'history'],
+      \ '/' : [':History/'     , 'search history'],
       \ ';' : [':Commands'     , 'commands'],
       \ 'a' : [':Ag'           , 'text Ag'],
       \ 'b' : [':BLines'       , 'current buffer'],

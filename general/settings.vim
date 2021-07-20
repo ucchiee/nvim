@@ -39,8 +39,6 @@ set relativenumber
 " set spell                               " Enables spell check
 " set complete+=k                         " Enables completion by spell dictionary
 
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
-
 " You can't stop me
 cmap w!! w !sudo tee %
 " turn off highlighting

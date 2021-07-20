@@ -19,6 +19,6 @@ if !exists('is_init')
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/coc-snippets.vim
   source $HOME/.config/nvim/plug-config/pydoc.vim
-  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-  luafile $HOME/.config/nvim/lua/plug-gitsigns.lua
+  lua require("plug-colorizer")
+  lua require("plug-gitsigns")
 endif

@@ -77,9 +77,9 @@ let g:which_key_map.g = {
       \ 'v' : [':Gitsigns preview_hunk'             , 'preview hunk'],
       \ 'b' : [':Gitsigns blame_line'               , 'blame line'],
       \ 'B' : [':Gitsigns toggle_current_line_blame', 'toggle current line blame'],
-      \ 'd' : [':Gitsigns diffthis'                 , 'diff this'],
-      \ 'a' : [':Gitsigns get_actions'              , 'get actions'],
+      \ 't' : [':Gitsigns diffthis'                 , 'diff this'],
       \ 'w' : [':Gitsigns toggle_word_diff'         , 'toggle word diff'],
+      \ 'a' : [':Gitsigns get_actions'              , 'get actions'],
       \ }
 
 " l is for language server protocol

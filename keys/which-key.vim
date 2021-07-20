@@ -29,7 +29,6 @@ let g:which_key_map['d'] = [ ':FloatermNew lazydocker'    , 'lazydocker' ]
 let g:which_key_map['e'] = [ ':NvimTreeToggle'            , 'explorer' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['g'] = [ ':FloatermNew lazygit'       , 'lazygit' ]
-let g:which_key_map['h'] = [ ':History:'                  , 'command history']
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['t'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
@@ -47,8 +46,8 @@ let g:which_key_map.s = {
       \ 'f' : [':Files'        , 'files'],
       \ 'g' : [':GFiles'       , 'git files'],
       \ 'G' : [':GFiles?'      , 'modified git files'],
-      \ 'h' : [':History'      , 'file history'],
-      \ 'H' : [':History:'     , 'command history'],
+      \ 'H' : [':History'      , 'file history'],
+      \ 'h' : [':History:'     , 'command history'],
       \ 'l' : [':Lines'        , 'lines'] ,
       \ 'm' : [':Marks'        , 'marks'] ,
       \ 'M' : [':Maps'         , 'normal maps'] ,

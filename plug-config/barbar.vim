@@ -2,10 +2,17 @@
 nnoremap <C-h> :BufferPrevious<CR>
 nnoremap <C-l> :BufferNext<CR>
 " Re-order to previous/next
-nnoremap <C-,> :BufferMovePrevious<CR>
-nnoremap <C-.> :BufferMoveNext<CR>
+nnoremap <M-h> :BufferMovePrevious<CR>
+nnoremap <M-l> :BufferMoveNext<CR>
 " Close buffer
 nnoremap <C-c> :BufferClose<CR>
+nnoremap <M-w> :BufferClose<CR>  " Rarely use
+
+" Mapping below might be deleted
+" Close command
+nnoremap <M-c> :BufferCloseAllButCurrent<CR>
+" Buffer Pick
+nnoremap <C-s> :BufferPick<CR>
 
 " NOTE: If barbar's option dict isn't created yet, create it
 let bufferline = get(g:, 'bufferline', {})

@@ -33,14 +33,26 @@ let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['t'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
+
+let g:which_key_map.b = {
+      \ 'name' : '+search' ,
+      \ 'c' : [':BufferClose'            , 'close'],
+      \ 'C' : [':BufferCloseButCurrent'  , 'close but current'],
+      \ 'L' : [':BufferCloseBuffersLeft' , 'close left'],
+      \ 'R' : [':BufferCloseBuffersRight', 'close right'],
+      \ 'p' : [':BufferPick'             , 'buffer pick'],
+      \ 'd' : [':BufferOrderByDirectory' , 'order by directory'],
+      \ 'l' : [':BufferOrderByLanguage'  , 'order by language'],
+      \ }
+
 " s is for search
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'     , 'search history'],
       \ ';' : [':Commands'     , 'commands'],
       \ 'a' : [':Ag'           , 'text Ag'],
-      \ 'b' : [':BLines'       , 'current buffer'],
-      \ 'B' : [':Buffers'      , 'open buffers'],
+      \ 'B' : [':BLines'       , 'current buffer'],
+      \ 'b' : [':Buffers'      , 'open buffers'],
       \ 'c' : [':Commits'      , 'commits'],
       \ 'C' : [':BCommits'     , 'buffer commits'],
       \ 'f' : [':Files'        , 'files'],

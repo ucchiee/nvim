@@ -79,7 +79,7 @@ let g:nvim_tree_show_icons = {
 "  \  }
 "  \ }
 
-nnoremap <leader>e :NvimTreeToggle<CR>
+nnoremap <leader>e :lua require"nvim-tree-barbar".toggle_tree()<CR>
 
 set termguicolors " this variable must be enabled for colors to be applied properly
 

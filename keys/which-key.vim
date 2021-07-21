@@ -23,16 +23,16 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
-let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
-let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['d'] = [ ':FloatermNew lazydocker'    , 'lazydocker' ]
-let g:which_key_map['e'] = [ ':NvimTreeToggle'            , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
-let g:which_key_map['g'] = [ ':FloatermNew lazygit'       , 'lazygit' ]
-let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
-let g:which_key_map['t'] = [ ':Rg'                        , 'search text' ]
-let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
+let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'                   , 'comment' ]
+let g:which_key_map['S'] = [ ':Startify'                                   , 'start screen' ]
+let g:which_key_map['d'] = [ ':FloatermNew lazydocker'                     , 'lazydocker' ]
+let g:which_key_map['e'] = [ ':lua require"nvim-tree-barbar".toggle_tree()', 'explorer' ]
+let g:which_key_map['f'] = [ ':Files'                                      , 'search files' ]
+let g:which_key_map['g'] = [ ':FloatermNew lazygit'                        , 'lazygit' ]
+let g:which_key_map['r'] = [ ':Ranger'                                     , 'ranger' ]
+let g:which_key_map['t'] = [ ':Rg'                                         , 'search text' ]
+let g:which_key_map['v'] = [ '<C-W>v'                                      , 'split right']
+let g:which_key_map['z'] = [ 'Goyo'                                        , 'zen' ]
 
 let g:which_key_map.b = {
       \ 'name' : '+search' ,

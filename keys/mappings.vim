@@ -27,7 +27,7 @@ nnoremap <C-s> :w<CR>
 " Alternate way to quit
 nnoremap <C-q> :wq!<CR>
 " Use control-c instead of escape
-" nnoremap <C-c> <Esc>
+nnoremap <C-c> <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 

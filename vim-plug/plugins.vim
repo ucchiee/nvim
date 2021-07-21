@@ -23,9 +23,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'edkolev/tmuxline.vim', { 'on': ['Tmuxline', 'TmuxlineSimple', 'TmuxlineSnapshot'] }
   " Stable version of coc
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " barbar
+  Plug 'romgrk/barbar.nvim'
   " Airline
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+  " Plug 'vim-airline/vim-airline'
+  " Plug 'vim-airline/vim-airline-themes'
   " Ranger
   Plug 'kevinhwang91/rnvimr'
   " Comment out

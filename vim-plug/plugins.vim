@@ -25,9 +25,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " barbar
   Plug 'romgrk/barbar.nvim'
-  " Airline
-  " Plug 'vim-airline/vim-airline'
-  " Plug 'vim-airline/vim-airline-themes'
+  " lualine
+  Plug 'hoob3rt/lualine.nvim' 
+  Plug 'ryanoasis/vim-devicons'
   " Ranger
   Plug 'kevinhwang91/rnvimr'
   " Comment out

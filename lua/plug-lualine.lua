@@ -1,16 +1,16 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'ayu_dark',
-    component_separators = {'', ''},
-    section_separators = {'', ''},
+    theme = 'onedark',
+    component_separators = {'|', '|'},
+    section_separators = {'', ''},
     disabled_filetypes = {}
   },
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_c = {'filename', 'diff'},
+    lualine_x = {{ 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} }, 'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },

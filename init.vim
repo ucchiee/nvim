@@ -5,8 +5,7 @@ if !exists('is_init')
   source $HOME/.config/nvim/keys/mappings.vim
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/themes/onedark.vim
-  source $HOME/.config/nvim/themes/airline.vim
-  source $HOME/.config/nvim/themes/tmuxline.vim
+  source $HOME/.config/nvim/plug-config/barbar.vim
   source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/nvim-tree.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
@@ -20,4 +19,6 @@ if !exists('is_init')
   source $HOME/.config/nvim/plug-config/coc-snippets.vim
   source $HOME/.config/nvim/plug-config/pydoc.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  " luafile $HOME/.config/nvim/lua/plug-galzxyline.lua
+  luafile $HOME/.config/nvim/lua/plug-lualine.lua
 endif

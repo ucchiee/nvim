@@ -75,36 +75,24 @@ let g:which_key_map.s = {
       \ }
 
 " g is for git
-let g:which_key_map.G = {
-      \ 'name' : '+git' ,
-      \ 'a' : [':Git add .'                        , 'add all'],
-      \ 'A' : [':CocCommand fzf-preview.GitStatus' , 'actions'],
-      \ 'b' : [':Git blame'                        , 'blame'],
-      \ 'B' : [':GBrowse'                          , 'browse'],
-      \ 'c' : [':Git commit'                       , 'commit'],
-      \ 'd' : [':Git diff'                         , 'diff'],
-      \ 'D' : [':Gdiffsplit'                       , 'diff split'],
-      \ 'g' : [':GGrep'                            , 'git grep'],
-      \ 'G' : [':Gstatus'                          , 'status'],
-      \ 'h' : [':GitGutterLineHighlightsToggle'    , 'highlight hunks'],
-      \ 'H' : ['<Plug>(GitGutterPreviewHunk)'      , 'preview hunk'],
-      \ 'i' : [':Gist -b'                          , 'post gist'],
-      \ 'j' : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'],
-      \ 'k' : ['<Plug>(GitGutterPrevHunk)'         , 'prev hunk'],
-      \ 'l' : [':Git log'                          , 'log'],
-      \ 'm' : ['<Plug>(git-messenger)'             , 'message'],
-      \ 'p' : [':Git push'                         , 'push'],
-      \ 'P' : [':Git pull'                         , 'pull'],
-      \ 'r' : [':GRemove'                          , 'remove'],
-      \ 's' : ['<Plug>(GitGutterStageHunk)'        , 'stage hunk'],
-      \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
-      \ 't' : [':GitGutterSignsToggle'             , 'toggle signs'],
-      \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
-      \ 'v' : [':GV'                               , 'view commits'],
-      \ 'V' : [':GV!'                              , 'view buffer commits'],
+let g:which_key_map.g = {
+      \ 'name' : '+git',
+      \ 'l' : [':FloatermNew lazygit'               , 'lazygit'],
+      \ 'n' : [':Gitsigns next_hunk'                , 'next hunk'],
+      \ 'p' : [':Gitsigns prev_hunk'                , 'prev hunk'],
+      \ 's' : [':Gitsigns stage_hunk'               , 'stage hunk'],
+      \ 'u' : [':Gitsigns undo_stage_hunk'          , 'undo stage hunk'],
+      \ 'S' : [':Gitsigns stage_buffer'             , 'stage buffer'],
+      \ 'U' : [':Gitsigns reset_buffer_index'       , 'reset buffer index'],
+      \ 'd' : [':Gitsigns reset_hunk'               , 'reset hunk'],
+      \ 'D' : [':Gitsigns reset_buffer'             , 'reset buffer'],
+      \ 'v' : [':Gitsigns preview_hunk'             , 'preview hunk'],
+      \ 'b' : [':Gitsigns blame_line'               , 'blame line'],
+      \ 'B' : [':Gitsigns toggle_current_line_blame', 'toggle current line blame'],
+      \ 't' : [':Gitsigns diffthis'                 , 'diff this'],
+      \ 'w' : [':Gitsigns toggle_word_diff'         , 'toggle word diff'],
+      \ 'a' : [':Gitsigns get_actions'              , 'get actions'],
       \ }
-      " \ 'A' : [':Git add %'                        , 'add current'],
-      " \ 'S' : [':!git status'                      , 'status'],
 
 " l is for language server protocol
 let g:which_key_map.l = {

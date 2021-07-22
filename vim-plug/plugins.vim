@@ -26,8 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " barbar
   Plug 'romgrk/barbar.nvim'
   " lualine
-  Plug 'hoob3rt/lualine.nvim' 
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
   " Ranger
   Plug 'kevinhwang91/rnvimr'
   " Comment out

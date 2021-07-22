@@ -14,7 +14,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set ignorecase                          " Ignore case
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set laststatus=0                        " Always display the status line
+" set laststatus=2                        " Always display the status line
 set mouse=a                             " Enable your mouse
 set nobackup                            " This is recommended by coc
 set nowrap                              " Display long lines as just one line

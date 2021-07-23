@@ -9,9 +9,9 @@ if !exists('is_init')
   source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/nvim-tree.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
-  source $HOME/.config/nvim/plug-config/commentary.vim
+  " source $HOME/.config/nvim/plug-config/commentary.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
-  source $HOME/.config/nvim/plug-config/rainbow.vim
+  " source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/sneak.vim
   source $HOME/.config/nvim/plug-config/quickscope.vim
@@ -22,4 +22,5 @@ if !exists('is_init')
   lua require("plug-gitsigns")   -- source lua/plug-gitsigns.lua
   " lua require("plug-galzxyline") -- source lua/plug-galzxyline.lua
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
+  lua require("plug-treesitter")
 endif

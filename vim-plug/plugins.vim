@@ -10,8 +10,10 @@ let g:polyglot_disabled = ['markdown']
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-  " Better Syntax Support
-  Plug 'sheerun/vim-polyglot'
+  " Treesitter related
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+  Plug 'p00f/nvim-ts-rainbow'
   " File Explorer
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
   Plug 'kyazdani42/nvim-tree.lua'

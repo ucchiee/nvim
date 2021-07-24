@@ -20,7 +20,7 @@ let g:nvim_tree_add_trailing = 1 "0 by default, append a trailing slash to folde
 let g:nvim_tree_group_empty = 1 " 0 by default, compact folders that only contain a single folder into one node in the file tree
 let g:nvim_tree_lsp_diagnostics = 1 "0 by default, will show lsp diagnostics in the signcolumn. See :help nvim_tree_lsp_diagnostics
 let g:nvim_tree_disable_window_picker = 0 "0 by default, will disable the window picker.
-let g:nvim_tree_hijack_cursor = 0 "1 by default, when moving cursor in the tree, will position the cursor at the start of the file on the current line
+let g:nvim_tree_hijack_cursor = 1 "1 by default, when moving cursor in the tree, will position the cursor at the start of the file on the current line
 let g:nvim_tree_icon_padding = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
 let g:nvim_tree_update_cwd = 0 "0 by default, will update the tree cwd when changing nvim's directory (DirChanged event). Behaves strangely with autochdir set.
 let g:nvim_tree_window_picker_exclude = {
@@ -90,7 +90,7 @@ lua <<EOF
   local tree_cb = require'nvim-tree.config'.nvim_tree_callback
   vim.g.nvim_tree_bindings = {
     { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
-    { key = {"<2-RightMouse>", "<C-]>", "."},    cb = tree_cb("cd") },
+    { key = {"<2-RightMouse>", "<C-]>", "l"},    cb = tree_cb("cd") },
     { key = "v",                            cb = tree_cb("vsplit") },
     { key = "s",                            cb = tree_cb("split") },
     { key = "t",                            cb = tree_cb("tabnew") },
@@ -117,7 +117,7 @@ lua <<EOF
     { key = "gy",                           cb = tree_cb("copy_absolute_path") },
     { key = "gp",                           cb = tree_cb("prev_git_item") },
     { key = "gn",                           cb = tree_cb("next_git_item") },
-    { key = "-",                            cb = tree_cb("dir_up") },
+    { key = "h",                            cb = tree_cb("dir_up") },
     { key = "q",                            cb = tree_cb("close") },
     { key = "?",                            cb = tree_cb("toggle_help") },
   }

@@ -8,12 +8,7 @@ local conditions = {
   end
 }
 
-local function line_progress()
-  winid = vim.g.statusline_winid
-  current_line = vim.api.nvim_win_get_cursor(winid)[1]
-  total_line = vim.api.nvim_buf_line_count(vim.fn.winbufnr(winid))
-  return tostring(math.ceil( (current_line / total_line) * 100 )).."%%"
-end
+local function line_progress() return '%3p%%' end
 
 -- almost onedark
 local colors = {

@@ -90,7 +90,7 @@ lua <<EOF
   local tree_cb = require'nvim-tree.config'.nvim_tree_callback
   vim.g.nvim_tree_bindings = {
     { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
-    { key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
+    { key = {"<2-RightMouse>", "<C-]>", "."},    cb = tree_cb("cd") },
     { key = "v",                            cb = tree_cb("vsplit") },
     { key = "s",                            cb = tree_cb("split") },
     { key = "t",                            cb = tree_cb("tabnew") },

@@ -8,6 +8,13 @@ local conditions = {
   end
 }
 
+local function line_progress()
+  winid = vim.g.statusline_winid
+  current_line = vim.api.nvim_win_get_cursor(winid)[1]
+  total_line = vim.api.nvim_buf_line_count(vim.fn.winbufnr(winid))
+  return tostring(math.ceil( (current_line / total_line) * 100 )).."%%"
+end
+
 -- almost onedark
 local colors = {
   bg = '#202328',
@@ -47,7 +54,7 @@ require'lualine'.setup {
       }
     },
     lualine_x = {{ 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} }, 'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
+    lualine_y = {line_progress},
     lualine_z = {'location'}
   },
   inactive_sections = {

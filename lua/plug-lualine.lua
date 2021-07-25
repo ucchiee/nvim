@@ -41,7 +41,7 @@ require'lualine'.setup {
       {
         'diff',
         -- Is it me or the symbol for modified us really weird
-        symbols = {added = ' ', modified = '柳 ', removed = ' '},
+        symbols = {added = ' ', modified = ' ', removed = ' '},
         color_added = colors.green,
         color_modified = colors.orange,
         color_removed = colors.red,

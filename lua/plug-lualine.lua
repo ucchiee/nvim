@@ -48,7 +48,7 @@ require'lualine'.setup {
         condition = conditions.hide_in_width
       }
     },
-    lualine_x = {{ 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} }, 'encoding', 'fileformat', 'filetype'},
+    lualine_x = {{ 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} }, 'encoding', 'fileformat', 'filetype'},
     lualine_y = {line_progress},
     lualine_z = {'location'}
   },

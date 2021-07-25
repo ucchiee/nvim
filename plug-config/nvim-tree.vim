@@ -50,34 +50,35 @@ let g:nvim_tree_show_icons = {
 
 " default will show icon by default if no icon is provided
 " default shows no icon by default
-"let g:nvim_tree_icons = {
-"  \ 'default':        '¿',
-"  \ 'symlink':        '¿',
-"  \ 'git': {
-"  \   'unstaged':     "¿",
-"  \   'staged':       "¿",
-"  \   'unmerged':     "¿",
-"  \   'renamed':      "¿",
-"  \   'untracked':    "¿",
-"  \   'deleted':      "¿",
-"  \  },
-"  \ 'folder': {
-"  \   'arrow_open':   "¿",
-"  \   'arrow_closed': "¿",
-"  \   'default':      "¿",
-"  \   'open':         "¿",
-"  \   'empty':        "¿",
-"  \   'empty_open':   "¿",
-"  \   'symlink':      "¿",
-"  \   'symlink_open': "¿",
-"  \  },
-"  \  'lsp': {
-"  \    'hint': "¿",
-"  \    'info': "¿",
-"  \    'warning': "¿",
-"  \    'error': "¿",
-"  \  }
-"  \ }
+let g:nvim_tree_icons = {
+  \ 'default':     'î˜’',
+  \ 'symlink':     'ï’',
+  \ 'git': {
+  \   'unstaged':  "ï‘„",
+  \   'staged':    "S",
+  \   'unmerged':  "îœ§",
+  \   'renamed':   "âœ",
+  \   'untracked': "U",
+  \   'deleted':   "ï‘˜ ",
+  \   'ignored':   "â—Œ"
+  \  },
+  \ 'folder': {
+  \   'arrow_open':   "ïƒ—",
+  \   'arrow_closed': "ïƒš",
+  \   'default':      "ï»",
+  \   'open':         "ï¼",
+  \   'empty':        "ï»",
+  \   'empty_open':   "ï¼",
+  \   'symlink':      "ï‚",
+  \   'symlink_open': "ï‚",
+  \  },
+  \  'lsp': {
+  \    'hint': "ïƒ« ",
+  \    'info': "ï‘‰ ",
+  \    'warning': "ï± ",
+  \    'error': "î¿ ",
+  \  }
+  \ }
 
 nnoremap <leader>e :lua require"nvim-tree-barbar".toggle_tree()<CR>
 

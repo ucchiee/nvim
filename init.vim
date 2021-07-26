@@ -4,7 +4,7 @@ if !exists('is_init')
   source $HOME/.config/nvim/general/ftsettings.vim
   source $HOME/.config/nvim/keys/mappings.vim
   source $HOME/.config/nvim/keys/which-key.vim
-  " source $HOME/.config/nvim/themes/onedark.vim
+  source $HOME/.config/nvim/themes/onedark.vim
   source $HOME/.config/nvim/plug-config/barbar.vim
   source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/nvim-tree.vim
@@ -23,5 +23,6 @@ if !exists('is_init')
   " lua require("plug-galzxyline") -- source lua/plug-galzxyline.lua
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
   lua require("plug-treesitter") -- source lua/plug-treesitter.lua
-  lua require("plug-tokyonight") -- source lua/plug-tokyonight.lua
+  " lua require("theme").enable("tokyonight")  -- source lua/theme/init.lua
+  " source $HOME/.config/nvim/themes/nvcode.vim
 endif

@@ -20,7 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Theme
-  Plug 'joshdick/onedark.vim'
+  " Plug 'joshdick/onedark.vim'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   " Tmuxline
   Plug 'edkolev/tmuxline.vim', { 'on': ['Tmuxline', 'TmuxlineSimple', 'TmuxlineSnapshot'] }
   " Stable version of coc

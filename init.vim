@@ -1,6 +1,7 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 if !exists('is_init')
   source $HOME/.config/nvim/general/settings.vim
+  source $HOME/.config/nvim/general/ftsettings.vim
   source $HOME/.config/nvim/keys/mappings.vim
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/themes/onedark.vim

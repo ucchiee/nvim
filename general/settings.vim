@@ -37,8 +37,6 @@ syntax enable                           " Enables syntax highlighing
 set relativenumber
 "set autochdir                          " Your working directory will always be the same as your working directory
 " set complete+=k                         " Enables completion by spell dictionary
-autocmd FileType markdown,txt setlocal spell
-autocmd FileType markdown,txt setlocal wrap
 
 " You can't stop me
 cmap w!! w !sudo tee %

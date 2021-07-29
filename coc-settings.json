@@ -1,9 +1,11 @@
 {
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
   "clangd.enabled": true,
   "clangd.path": "/home/uu/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    /* "markdown", */
     "javascript",
     "graphql",
     "html",
@@ -14,19 +16,40 @@
     "zsh",
     "cpp"
   ],
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt",
+    "zsh": "shfmt"
+  },
+  "diagnostic-languageserver.formatters": {
+    "shfmt": {
+      "args": [
+        "-i",
+        "4",
+        "-ci",
+        "-sr",
+        "-s"
+      ],
+      "command": "shfmt"
+    }
+  },
   "explorer.icon.enableNerdfont": true,
   "explorer.keyMappings.global": {
-    "<cr>": ["expandable?", "expand", "open"],
+    "<cr>": [
+      "expandable?",
+      "expand",
+      "open"
+    ],
     "v": "open:vsplit"
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
   "pyright.disableDiagnostics": true,
-  /* "pyright.disableSelfClsNotAccessed": true, */
-  "python.formatting.blackArgs": ["-l", "120"],
+  "python.formatting.blackArgs": [
+    "-l",
+    "120"
+  ],
   "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.provider": "black",
-  /* "python.jediEnabled": false, */
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
     "--max-line-length",
@@ -34,29 +57,18 @@
     "--ignore=E402,E203,E501,W503",
     "--exclude=__init__.py"
   ],
-  "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+  "python.linting.pylintEnabled": false,
   "python.pythonPath": "python",
-  "python.sortImports.args": ["--profile", "black"],
+  "python.sortImports.args": [
+    "--profile",
+    "black"
+  ],
   "python.sortImports.path": "",
   "python.venvPath": ".env",
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
-  "diagnostic-languageserver.formatFiletypes": {
-    // format `sh` (includes `bash`) files using formatter defined below
-    "sh": "shfmt",
-    "zsh": "shfmt"
-  },
-  "diagnostic-languageserver.formatters": {
-    // define our formatter so that we can reference it from
-    // `diagnostic-languageserver.formatFiletypes`
-    "shfmt": {
-      "command": "shfmt",
-      // all the below args are entirely optional
-      // primarily listed here to call out that flags which take an
-      // argument (such as `-i <num-spaces>` for specifying indentation)
-      // should be split into two strings, the flag and then the value
-      "args": ["-i", "4", "-ci", "-sr", "-s"]
-    }
-  }
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "~/.config/nvim/snips"
+  ]
 }

@@ -12,3 +12,10 @@ augroup filetype_html
     autocmd!
     autocmd FileType html nnoremap <buffer> <leader>q Vatzf
 augroup END
+augroup md_headline
+  autocmd!
+  onoremap <buffer> ah :<c-u>execute "normal! ?^--\\+$\r:nohlsearch\rg_vk0"<cr>
+  onoremap <buffer> ih :<c-u>execute "normal! ?^--\\+$\r:nohlsearch\rkvg_"<cr>
+augroup END
+
+onoremap in@ :<c-u>execute "normal! k$/[^ ]\\+@[^ ]\\+\r:nohlsearch\rviW"<cr>

@@ -2,6 +2,7 @@ augroup spell
   autocmd!
   autocmd FileType markdown,txt setlocal spell
   autocmd FileType markdown,txt setlocal wrap
+  autocmd FileType markdown,txt setlocal complete+=k
 augroup END
 augroup filetype_lua
   autocmd!

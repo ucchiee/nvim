@@ -21,7 +21,7 @@ set nowrap                              " Display long lines as just one line
 set nowritebackup                       " This is recommended by coc
 set number                              " Line numbers
 set pumheight=10                        " Makes popup menu smaller
-set ruler              			            " Show the cursor position all the time
+set ruler         			            " Show the cursor position all the time
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set showtabline=2                       " Always show tabs
 set smartcase                           " Override ignore case for mixed case searches
@@ -36,7 +36,6 @@ set updatetime=300                      " Faster completion
 syntax enable                           " Enables syntax highlighing
 set relativenumber
 "set autochdir                          " Your working directory will always be the same as your working directory
-" set complete+=k                         " Enables completion by spell dictionary
 
 " You can't stop me
 cmap w!! w !sudo tee %

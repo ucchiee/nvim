@@ -36,6 +36,7 @@ nnoremap <Leader>o o<Esc>^C
 nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
+noremap <Leader>G Gzz
 " I prefer H/L to go to the start/end of the line
 " nnoremap H ^
 " nnoremap L $

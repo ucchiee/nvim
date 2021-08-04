@@ -37,8 +37,8 @@ nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
 " I prefer H/L to go to the start/end of the line
-nnoremap H ^
-nnoremap L $
+" nnoremap H ^
+" nnoremap L $
 " Move lines
 nnoremap \| :m .-2<CR>
 nnoremap \  :m .+1<CR>

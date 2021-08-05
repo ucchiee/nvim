@@ -36,10 +36,14 @@ nnoremap <Leader>o o<Esc>^C
 nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
-nnoremap G Gzz  " <Leader>G might be used by git-relative plugin
-" I prefer H/L to go to the start/end of the line
-" nnoremap H ^
-" nnoremap L $
+nnoremap G Gzz  " <Leader>G might be used by git-relative plugin so I don't use that
+
+" I hate unintentionally moving cursor in insert mode
+inoremap <Up>    nop
+inoremap <Down>  nop
+inoremap <Left>  nop
+inoremap <Right> nop
+
 " Move lines
 nnoremap \| :m .-2<CR>
 nnoremap \  :m .+1<CR>

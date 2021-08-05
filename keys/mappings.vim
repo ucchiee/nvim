@@ -36,9 +36,15 @@ nnoremap <Leader>o o<Esc>^C
 nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
-nnoremap G Gzz  " <Leader>G might be used by git-relative plugin so I don't use that
+nnoremap gG Gzz  " <Leader>G might be used by git-relative plugin so I don't use that
+nnoremap j gj
+nnoremap k gk
 
 " I hate unintentionally moving cursor in insert mode
+nnoremap <Up>    <nop>
+nnoremap <Down>  <nop>
+nnoremap <Left>  <nop>
+nnoremap <Right> <nop>
 inoremap <Up>    <nop>
 inoremap <Down>  <nop>
 inoremap <Left>  <nop>

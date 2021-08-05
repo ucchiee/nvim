@@ -16,8 +16,8 @@ inoremap <c-u> <ESC>viw~gi
 inoremap <c-y> <ESC>b~gi
 
 " <C-l> in general mode will move to text buffer
-nnoremap <C-l>     :bnext<CR>
-nnoremap <S-Right> :blast<CR>
+nnoremap <C-l>     :bnext<CR>  " will be overwritten by barbar
+nnoremap <S-Right> :blast<CR>  " will be overwritten by barbar
 " <C-h> go back
 nnoremap <C-h>     :bprevious<CR>
 nnoremap <S-Left>  :bfirst<CR>

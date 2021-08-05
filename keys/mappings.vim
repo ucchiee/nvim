@@ -36,7 +36,7 @@ nnoremap <Leader>o o<Esc>^C
 nnoremap <Leader>O O<Esc>^C
 noremap <Leader>n nzz
 noremap <Leader>N Nzz
-noremap gG Gzz
+noremap gG Gzz  " <Leader>G might be used by git-relative plugin
 " I prefer H/L to go to the start/end of the line
 " nnoremap H ^
 " nnoremap L $

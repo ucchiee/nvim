@@ -39,10 +39,10 @@ noremap <Leader>N Nzz
 nnoremap G Gzz  " <Leader>G might be used by git-relative plugin so I don't use that
 
 " I hate unintentionally moving cursor in insert mode
-inoremap <Up>    nop
-inoremap <Down>  nop
-inoremap <Left>  nop
-inoremap <Right> nop
+inoremap <Up>    <nop>
+inoremap <Down>  <nop>
+inoremap <Left>  <nop>
+inoremap <Right> <nop>
 
 " Move lines
 nnoremap \| :m .-2<CR>

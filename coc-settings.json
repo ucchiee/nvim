@@ -48,7 +48,7 @@
     "-l",
     "120"
   ],
-  "python.formatting.blackPath": "~/.pyenv/shims/black",
+  "python.formatting.blackPath": "black",
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
   "python.linting.flake8Args": [
@@ -58,7 +58,7 @@
     "--exclude=__init__.py"
   ],
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+  "python.linting.flake8Path": "flake8",
   "python.linting.pylintEnabled": false,
   "python.pythonPath": "python",
   "python.sortImports.args": [

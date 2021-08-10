@@ -62,4 +62,8 @@ cnoremap <C-n> <Down>
 " Expand current abs path of current directory
 cnoremap <<expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
 
+" Do the last substitute command
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
 iabbrev @@ fantomyuu0623@gmail.com

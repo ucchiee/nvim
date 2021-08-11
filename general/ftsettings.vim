@@ -30,10 +30,11 @@ augroup filetype_html
 augroup END
 " }}}
 
-" Vimscript file settings ---------------{{{
+" Vimscript folding setting ---------------{{{
 augroup filetype_vim
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
+    autocmd FileType vim setlocal foldlevel=99
 augroup END
 " }}}
 

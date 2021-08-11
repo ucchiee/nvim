@@ -1,9 +1,11 @@
+" Spell setting in markdowh and txt ---------{{{
 augroup spell
   autocmd!
   autocmd FileType markdown,txt setlocal spell
   autocmd FileType markdown,txt setlocal wrap
   autocmd FileType markdown,txt setlocal complete+=k
 augroup END
+" }}}
 
 augroup md_headline
   autocmd!
@@ -21,5 +23,12 @@ augroup filetype_html
     autocmd!
     autocmd FileType html nnoremap <buffer> <leader>q Vatzf
 augroup END
+
+" Vimscript file settings ---------------{{{
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
 
 onoremap in@ :<c-u>execute "normal! k$/[^ ]\\+@[^ ]\\+\r:nohlsearch\rviW"<cr>

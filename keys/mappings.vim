@@ -39,6 +39,8 @@ noremap <Leader>N Nzz
 nnoremap gG Gzz  " <Leader>G might be used by git-relative plugin so I don't use that
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " I hate unintentionally moving cursor in insert mode
 nnoremap <Up>    <nop>

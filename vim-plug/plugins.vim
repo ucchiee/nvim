@@ -71,7 +71,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " visual start search
   Plug 'bronson/vim-visual-star-search'
   " html
-  " Plug 'mattn/emmet-vim'
+  Plug 'mattn/emmet-vim'
 call plug#end()
 
 autocmd VimEnter *

@@ -12,8 +12,8 @@ inoremap kj <Esc>
 inoremap jk <Esc>
 
 " Easy CAPS
-inoremap <c-u> <ESC>viw~gi
-inoremap <c-y> <ESC>b~gi
+" inoremap <c-u> <ESC>viw~gi
+" inoremap <c-y> <ESC>b~gi
 
 " <C-l> in general mode will move to text buffer
 nnoremap <C-l>     :bnext<CR>  " will be overwritten by barbar

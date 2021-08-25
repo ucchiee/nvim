@@ -17,9 +17,9 @@ inoremap jk <Esc>
 
 " <C-l> in general mode will move to text buffer
 nnoremap <C-l>     :bnext<CR>  " will be overwritten by barbar
-nnoremap <S-Right> :blast<CR>  " will be overwritten by barbar
+nnoremap <S-Right> :blast<CR>
 " <C-h> go back
-nnoremap <C-h>     :bprevious<CR>
+nnoremap <C-h>     :bprevious<CR>  " will be overwritten by barbar
 nnoremap <S-Left>  :bfirst<CR>
 
 " Alternate way to save

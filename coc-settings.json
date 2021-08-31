@@ -13,8 +13,7 @@
     "json",
     "python",
     "shellscript",
-    "zsh",
-    "cpp"
+    "zsh"
   ],
   "diagnostic-languageserver.formatFiletypes": {
     "sh": "shfmt",

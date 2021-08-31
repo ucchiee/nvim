@@ -28,7 +28,7 @@ local colors = {
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'material',
+    theme = 'onedark',
     component_separators = {'|', '|'},
     section_separators = {'', ''},
     disabled_filetypes = {}

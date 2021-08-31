@@ -42,16 +42,6 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-" I hate unintentionally moving cursor in insert mode
-nnoremap <Up>    <nop>
-nnoremap <Down>  <nop>
-nnoremap <Left>  <nop>
-nnoremap <Right> <nop>
-inoremap <Up>    <nop>
-inoremap <Down>  <nop>
-inoremap <Left>  <nop>
-inoremap <Right> <nop>
-
 " Move lines
 nnoremap \| :m .-2<CR>
 nnoremap \  :m .+1<CR>

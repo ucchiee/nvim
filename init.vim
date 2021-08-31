@@ -20,9 +20,6 @@ if !exists('is_init')
   source $HOME/.config/nvim/plug-config/pydoc.vim
   lua require("plug-colorizer")  -- source lua/plug-colorizer.lua
   lua require("plug-gitsigns")   -- source lua/plug-gitsigns.lua
-  " lua require("plug-galzxyline") -- source lua/plug-galzxyline.lua
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
   lua require("plug-treesitter") -- source lua/plug-treesitter.lua
-  " lua require("theme").enable("tokyonight")  -- source lua/theme/init.lua
-  " source $HOME/.config/nvim/themes/nvcode.vim
 endif

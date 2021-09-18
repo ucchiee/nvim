@@ -11,7 +11,7 @@ let g:startify_bookmarks = [
             \ { 'd': '~/dotfiles/Makefile' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 's': '~/simple.vimrc' },
-            \ { 't': '~/.tmux.conf' },
+            \ { 't': '~/dotfiles/tmux/.config/tmux/tmux.conf' },
             \ { 'v': '~/.vimrc' },
             \ { 'z': '~/.config/zsh/zshrc' },
             \ ]

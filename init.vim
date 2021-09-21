@@ -19,6 +19,7 @@ if !exists('is_init')
   source $HOME/.config/nvim/plug-config/coc-snippets.vim
   source $HOME/.config/nvim/plug-config/pydoc.vim
   source $HOME/.config/nvim/plug-config/md-img-paste.vim  " needs to install xclip (Linux)
+  source $HOME/.config/nvim/plug-config/markdown-preview.vim  " needs to install xclip (Linux)
   lua require("plug-colorizer")  -- source lua/plug-colorizer.lua
   lua require("plug-gitsigns")   -- source lua/plug-gitsigns.lua
   lua require("plug-lualine")    -- source lua/plug-lualine.lua

@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'p00f/nvim-ts-rainbow'
   " File Explorer
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
+  Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Theme

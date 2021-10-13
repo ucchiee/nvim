@@ -17,6 +17,10 @@ nnoremap <C-s> :BufferPick<CR>
 " NOTE: If barbar's option dict isn't created yet, create it
 let bufferline = get(g:, 'bufferline', {})
 
+" New tabs are opened next to the currently selected tab.
+" Enable to insert them in buffer number order.
+let bufferline.add_in_buffer_number_order = v:false
+
 " Enable/disable animations
 let bufferline.animation = v:true
 
@@ -34,7 +38,12 @@ let bufferline.closable = v:true
 "  - middle-click: delete buffer
 let bufferline.clickable = v:true
 
+" Excludes buffers from the tabline
+let bufferline.exclude_ft = ['javascript']
+let bufferline.exclude_name = ['package.json']
+
 " Enable/disable icons
+" if set to 'buffer_number', will show buffer number in the tabline
 " if set to 'numbers', will show buffer index in the tabline
 " if set to 'both', will show buffer index and icons in the tabline
 let bufferline.icons = v:true
@@ -48,6 +57,12 @@ let bufferline.icon_separator_active = '▎'
 let bufferline.icon_separator_inactive = '▎'
 let bufferline.icon_close_tab = ''
 let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_pinned = '車'
+
+" If true, new buffers will be inserted at the start/end of the list.
+" Default is to insert after current buffer.
+let bufferline.insert_at_start = v:false
+let bufferline.insert_at_end = v:false
 
 " Sets the maximum padding width with which to surround each tab.
 let bufferline.maximum_padding = 4

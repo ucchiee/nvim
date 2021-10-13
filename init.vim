@@ -7,7 +7,6 @@ if !exists('is_init')
   source $HOME/.config/nvim/themes/onedark.vim
   source $HOME/.config/nvim/plug-config/barbar.vim
   source $HOME/.config/nvim/plug-config/coc.vim
-  source $HOME/.config/nvim/plug-config/nvim-tree.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/commentary.vim
   source $HOME/.config/nvim/plug-config/fzf.vim

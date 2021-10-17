@@ -10,7 +10,6 @@
     "graphql",
     "html",
     "yaml",
-    "json",
     "python",
     "shellscript",
     "zsh"
@@ -69,5 +68,10 @@
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/snips"
-  ]
+  ],
+  "texlab.forwardSearch.args": [
+    "--unique",
+    "%p#src:%f:%l:1"
+  ],
+  "texlab.forwardSearch.executable": "qpdfview"
 }

@@ -25,16 +25,16 @@ augroup END
 
 " html mapping ------------{{{
 augroup filetype_html
-    autocmd!
-    autocmd FileType html nnoremap <buffer> <leader>q Vatzf
+  autocmd!
+  autocmd FileType html nnoremap <buffer> <leader>q Vatzf
 augroup END
 " }}}
 
 " Vimscript folding setting ---------------{{{
 augroup filetype_vim
-    autocmd!
-    autocmd FileType vim setlocal foldmethod=marker
-    autocmd FileType vim setlocal foldlevel=99
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+  autocmd FileType vim setlocal foldlevel=99
 augroup END
 " }}}
 

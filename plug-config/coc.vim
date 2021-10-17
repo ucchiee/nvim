@@ -7,7 +7,8 @@ let g:coc_global_extensions = [
       \'coc-snippets',
       \'coc-prettier',
       \'coc-clangd',
-      \'coc-vimlsp'
+      \'coc-vimlsp',
+      \'coc-texlab'
       \]
 
 let g:coc_markdown_disabled_languages = ['html', 'md', 'markdown']

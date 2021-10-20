@@ -77,7 +77,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ferrine/md-img-paste.vim'  " needs to install xclip (Linux)
   " markdwon preview
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-  call plug#end()
+call plug#end()
 
 autocmd VimEnter *
   \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))

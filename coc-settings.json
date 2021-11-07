@@ -1,9 +1,7 @@
 {
-  "Lua.diagnostics.globals": [
-    "vim"
-  ],
+  "Lua.diagnostics.globals": ["vim"],
   "clangd.enabled": true,
-  "clangd.path": "/home/uu/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "javascript",
@@ -21,32 +19,19 @@
   },
   "diagnostic-languageserver.formatters": {
     "shfmt": {
-      "args": [
-        "-i",
-        "4",
-        "-ci",
-        "-sr",
-        "-s"
-      ],
+      "args": ["-i", "4", "-ci", "-sr", "-s"],
       "command": "shfmt"
     }
   },
   "explorer.icon.enableNerdfont": true,
   "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
+    "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
   "explorer.previewAction.onHover": false,
   "explorer.width": 30,
   "pyright.disableDiagnostics": true,
-  "python.formatting.blackArgs": [
-    "-l",
-    "120"
-  ],
+  "python.formatting.blackArgs": ["-l", "120"],
   "python.formatting.blackPath": "black",
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
@@ -58,16 +43,11 @@
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
+  "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": false,
   "python.pythonPath": "python",
-  "python.sortImports.args": [
-    "--profile",
-    "black"
-  ],
+  "python.sortImports.args": ["--profile", "black"],
   "python.sortImports.path": "",
   "python.venvPath": ".env",
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/snips"
-  ]
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"]
 }

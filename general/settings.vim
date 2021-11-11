@@ -22,7 +22,7 @@ set nowritebackup                       " This is recommended by coc
 set number                              " Line numbers
 set pumheight=10                        " Makes popup menu smaller
 set ruler         			            " Show the cursor position all the time
-set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set showtabline=2                       " Always show tabs
 set smartcase                           " Override ignore case for mixed case searches
 set smartindent                         " Makes indenting smart

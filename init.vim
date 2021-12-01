@@ -6,7 +6,6 @@ if !exists('is_init')
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/themes/onedark.vim
   source $HOME/.config/nvim/plug-config/barbar.vim
-  source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/chadtree.vim
   " source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/commentary.vim

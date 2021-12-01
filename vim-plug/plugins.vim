@@ -23,8 +23,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'joshdick/onedark.vim'
   " Tmuxline
   " Plug 'edkolev/tmuxline.vim', { 'on': ['Tmuxline', 'TmuxlineSimple', 'TmuxlineSnapshot'] }
-  " Stable version of coc
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " lspconfig
+  Plug 'neovim/nvim-lspconfig'
   " barbar
   Plug 'romgrk/barbar.nvim'
   " Statusline

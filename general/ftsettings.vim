@@ -2,8 +2,9 @@
 augroup spell
   autocmd!
   " autocmd FileType markdown,txt setlocal spell
-  autocmd FileType markdown,txt setlocal wrap
-  autocmd FileType markdown,txt setlocal complete+=k
+  autocmd FileType markdown,txt,tex setlocal wrap
+  autocmd FileType markdown,txt,tex setlocal complete+=k
+  autocmd FileType markdown,txt,tex setlocal shiftwidth=2
 augroup END
 " }}}
 

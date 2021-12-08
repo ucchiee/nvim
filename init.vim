@@ -23,4 +23,5 @@ if !exists('is_init')
   lua require("plug-gitsigns")   -- source lua/plug-gitsigns.lua
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
   lua require("plug-treesitter") -- source lua/plug-treesitter.lua
+  lua require("plug-lspconfig") -- source lua/plug-lspconfig.lua
 endif

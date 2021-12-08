@@ -10,7 +10,7 @@ augroup END
 " Indentation setting ---------{{{
 augroup indentation
   autocmd!
-  autocmd FileType cpp setlocal shiftwidth=4
+  autocmd FileType cpp setlocal showtabline=4
 augroup END
 " }}}
 

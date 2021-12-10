@@ -24,4 +24,5 @@ if !exists('is_init')
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
   lua require("plug-treesitter") -- source lua/plug-treesitter.lua
   lua require("plug-lspconfig") -- source lua/plug-lspconfig.lua
+  " lua require("plug-which-key") -- source lua/plug-which-key.lua
 endif

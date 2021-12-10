@@ -49,6 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-fugitive'
   " which key
   Plug 'liuchengxu/vim-which-key'
+  " Plug 'folke/which-key.nvim'
   " Sneak
   Plug 'justinmk/vim-sneak'
   " quick-scope

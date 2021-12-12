@@ -3,7 +3,7 @@ if !exists('is_init')
   source $HOME/.config/nvim/general/settings.vim
   source $HOME/.config/nvim/general/ftsettings.vim
   source $HOME/.config/nvim/keys/mappings.vim
-  source $HOME/.config/nvim/keys/which-key.vim
+  " source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/themes/onedark.vim
   source $HOME/.config/nvim/plug-config/barbar.vim
   source $HOME/.config/nvim/plug-config/chadtree.vim
@@ -24,5 +24,5 @@ if !exists('is_init')
   lua require("plug-lualine")    -- source lua/plug-lualine.lua
   lua require("plug-treesitter") -- source lua/plug-treesitter.lua
   lua require("plug-lspconfig") -- source lua/plug-lspconfig.lua
-  " lua require("plug-which-key") -- source lua/plug-which-key.lua
+  lua require("plug-which-key") -- source lua/plug-which-key.lua
 endif

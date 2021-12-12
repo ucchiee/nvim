@@ -48,8 +48,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'tpope/vim-fugitive'
   " which key
-  Plug 'liuchengxu/vim-which-key'
-  " Plug 'folke/which-key.nvim'
+  " Plug 'liuchengxu/vim-which-key'
+  Plug 'folke/which-key.nvim'
   " Sneak
   Plug 'justinmk/vim-sneak'
   " quick-scope

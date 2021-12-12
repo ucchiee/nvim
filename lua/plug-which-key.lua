@@ -182,3 +182,8 @@ wk.register({
     }
   },
 })
+
+vim.api.nvim_command('highlight default link WhichKey          Operator')
+vim.api.nvim_command('highlight default link WhichKeySeperator DiffAdded')
+vim.api.nvim_command('highlight default link WhichKeyGroup     Identifier')
+vim.api.nvim_command('highlight default link WhichKeyDesc      Function')

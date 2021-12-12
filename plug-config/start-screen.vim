@@ -10,6 +10,7 @@ let g:startify_bookmarks = [
             \ { 'c': '~/.config/nvim/coc-settings.json' },
             \ { 'd': '~/dotfiles/Makefile' },
             \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 'y': '~/dotfiles/kitty/.config/kitty/kitty.conf' },
             \ { 's': '~/dotfiles/vim/simple.vimrc' },
             \ { 't': '~/dotfiles/tmux/.config/tmux/tmux.conf' },
             \ { 'v': '~/dotfiles/vim/.vimrc' },

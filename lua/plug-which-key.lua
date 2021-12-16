@@ -177,7 +177,7 @@ wk.register({
       s = { ":FloatermNew ncdu<CR>"                                     , "ncdu" },
     },
     m = {
-      name = "+markdonw",
+      name = "+markdown",
       p = { "<Plug>MarkdownPreviewToggle", "preview" },
     }
   },

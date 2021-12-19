@@ -32,7 +32,7 @@ let g:which_key_map['g'] = [ ':FloatermNew lazygit'                        , 'la
 let g:which_key_map['r'] = [ ':Ranger'                                     , 'ranger' ]
 let g:which_key_map['t'] = [ ':Rg'                                         , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                                      , 'split right']
-let g:which_key_map['z'] = [ 'Goyo'                                        , 'zen' ]
+let g:which_key_map['w'] = [ ':w'                                          , 'save' ]
 
 let g:which_key_map.b = {
       \ 'name' : '+search' ,

@@ -110,6 +110,7 @@ cmp.setup {
   },
   sources = {
     { name = "luasnip" },  -- listed in this order
+    { name = "nvim_lua" },
     { name = "buffer" },
     { name = "path" },
   },

@@ -32,7 +32,7 @@ keymap("n", "<C-l>", ":bnext<CR>", opts)
 keymap("n", "<C-h>", ":bprevious<CR>", opts)
 
 -- Move text up and down
-keymap("n", "\|", ":m .-2<CR>", opts)
+keymap("n", "|", ":m .-2<CR>", opts)
 keymap("n", "\\", ":m .+1<CR>", opts)
 
 -- Useful binding
@@ -52,7 +52,7 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("n", "\|", ":m '<-2<CR>gv", opts)
+keymap("n", "|", ":m '<-2<CR>gv", opts)
 keymap("n", "\\", ":m '>+1<CR>gv", opts)
 keymap("v", "p", '"_dP', opts)
 

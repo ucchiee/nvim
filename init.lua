@@ -8,3 +8,4 @@ require "user.telescope"  -- source lua/user/telescope.lua
 require "user.floaterm"  --source lua/user/floaterm.lua
 require "user.treesitter"  -- source lua/user/treesitter.lua
 require "user.autopairs"  -- source lua/user/autopairs.lua
+require "user.comment"  -- ousrce lua/user/comment.lua

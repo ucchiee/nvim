@@ -68,5 +68,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("c", "<C-n>", "<Down>", opts)
 keymap("c", "<C-p>", "<Up>", opts)
 
+
+-- plugin keybinding
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>t", "<cmd>Telescope live_grep<cr>", opts)

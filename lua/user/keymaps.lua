@@ -41,6 +41,8 @@ keymap("n", "<leader>O", "O<esc>^C", opts)
 keymap("n", "<leader>n", "nzz", opts)
 keymap("n", "<leader>N", "Nzz", opts)
 
+keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch!<CR>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)

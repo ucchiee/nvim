@@ -90,6 +90,11 @@ return packer.startup(function(use)
   -- File Explorer
   use {"ms-jpq/chadtree", branch = 'chad', run = "python3 -m chadtree deps"}
 
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

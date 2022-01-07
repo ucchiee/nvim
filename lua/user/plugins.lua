@@ -46,6 +46,10 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   -- colorscheme
   use "lunarvim/colorschemes"
@@ -86,14 +90,6 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-
-  -- File Explorer
-  use {"ms-jpq/chadtree", branch = 'chad', run = "python3 -m chadtree deps"}
-
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

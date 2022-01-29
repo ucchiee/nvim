@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes"
   -- use "lunarvim/darkplus.nvim"
   use "folke/tokyonight.nvim"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

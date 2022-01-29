@@ -35,16 +35,16 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
-vim.opt.shortmess:append "c"
+vim.opt.shortmess:append("c")
 
 for k, v in pairs(options) do
-  vim.opt[k] = v
+	vim.opt[k] = v
 end
 
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
-vim.cmd [[
+vim.cmd("set whichwrap+=<,>,[,],h,l")
+vim.cmd([[set iskeyword+=-]])
+vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
+vim.cmd([[
   set nocp                    " 'compatible' is not set
   filetype plugin on          " plugins are enabled
   let g:netrw_banner=0        " disable annoying banner
@@ -53,4 +53,4 @@ vim.cmd [[
   let g:netrw_liststyle=3     " tree view
   let g:netrw_list_hide=netrw_gitignore#Hide()
   let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-]]
+]])

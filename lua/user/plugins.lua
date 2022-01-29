@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use 'lewis6991/impatient.nvim'
   use "ahmedkhalf/project.nvim"
   use "goolord/alpha-nvim"
+  use "folke/which-key.nvim"
 
   -- colorscheme
   use "lunarvim/colorschemes"

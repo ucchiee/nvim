@@ -56,7 +56,7 @@ local setup = {
     align = "left", -- align columns left, center or right
   },
   ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
-  hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
+  hidden = { "<silent>", "<cmd>", "<Cmd>", "<cr>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
   show_help = true, -- show help message on the command line when the popup is visible
   triggers = "auto", -- automatically setup triggers
   -- triggers = {"<leader>"} -- or specify a list manually
@@ -79,16 +79,16 @@ local opts = {
 }
 
 local mappings = {
-  ["/"] = { "<cmd>lua require(\"Comment.api\").toggle_current_linewise()<CR>", "Comment" },
+  ["/"] = { "<cmd>lua require(\"Comment.api\").toggle_current_linewise()<cr>", "Comment" },
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["w"] = { "<cmd>w!<CR>", "Save" },
-  -- ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },  -- use <C-C>
-  -- ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },  -- use <esc><esc>
+  ["w"] = { "<cmd>w!<cr>", "Save" },
+  -- ["c"] = { "<cmd>Bdelete!<cr>", "Close Buffer" },  -- use <C-C>
+  -- ["h"] = { "<cmd>nohlsearch<cr>", "No Highlight" },  -- use <esc><esc>
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
@@ -139,11 +139,11 @@ local mappings = {
       "<cmd>Telescope lsp_workspace_diagnostics<cr>",
       "Workspace Diagnostics",
     },
-    f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+    F = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {
-      "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
+      "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>",
       "Next Diagnostic",
     },
     k = {
@@ -175,8 +175,8 @@ local mappings = {
   j = {
     name = "Terminal",
     [';'] = { "<cmd>FloatermToggle<cr>", "Float" },
-    ['h'] = { ":new<CR>:ter<CR>i", "Horizontal" },
-    ['v'] = { ":vnew<CR>:ter<CR>i", "Vertical" },
+    ['h'] = { ":new<cr>:ter<cr>i", "Horizontal" },
+    ['v'] = { ":vnew<cr>:ter<cr>i", "Vertical" },
     ['s'] = { "<cmd>FloatermNew ncdu<cr>", "ncdu" },
     ['b'] = { "<cmd>FloatermNew btm<cr>", "btm" },
     ['p'] = { "<cmd>FloatermNew python<cr>", "Python" },
@@ -197,7 +197,8 @@ local vopts = {
   nowait = true, -- use `nowait` when creating keymaps
 }
 local vmappings = {
-  ["/"] = { "<ESC><CMD>lua require(\"Comment.api\").toggle_linewise_op(vim.fn.visualmode())<CR>", "Comment" },
+  ["/"] = { "<ESC><CMD>lua require(\"Comment.api\").toggle_linewise_op(vim.fn.visualmode())<cr>", "Comment" },
+  ["lF"] = { ":'<,'>lua vim.lsp.buf.range_formatting()<cr>", "Range Format"},
 }
 
 which_key.setup(setup)

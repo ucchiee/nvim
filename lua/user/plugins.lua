@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use 'nvim-lualine/lualine.nvim'
   use 'lewis6991/impatient.nvim'
+  use "ahmedkhalf/project.nvim"
 
   -- colorscheme
   use "lunarvim/colorschemes"

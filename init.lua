@@ -15,3 +15,4 @@ require "user.bufferline"  -- source lua/user/bufferline.lua
 require "user.lualine"  -- source lua/user/lualine.lua
 require "user.impatient"  -- source lua/user/impatient.lua
 require "user.project"  -- source lua/user/project.lua
+require "user.alpha"  -- source lua/user/alpha.lua

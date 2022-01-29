@@ -77,3 +77,6 @@ keymap("n", "<leader>t", "<cmd>Telescope live_grep<cr>", opts)
 
 -- nvim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- buffer-related
+keymap("n", "<C-c>", ":Bdelete<cr>", opts)

@@ -20,12 +20,12 @@ local isort_config = { "--stdout", "--profile", "black", "-" }
 null_ls.setup({
 	debug = false,
 	sources = {
-    -- formatter
+		-- formatter
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = black_config }),
 		formatting.isort.with({ extra_args = isort_config }),
 		formatting.stylua,
-    -- linter
+		-- linter
 		diagnostics.flake8.with({ extra_args = flake8_config }),
 	},
 })

@@ -20,8 +20,12 @@ dashboard.section.buttons.val = {
 	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+  dashboard.button("=", "=============================================", ""),
+	dashboard.button("i", "  Neovim Config", ":e ~/.config/nvim/init.lua <CR>"),
+	dashboard.button("z", "  Zsh Config", ":e ~/dotfiles/zsh/.config/zsh/zshrc <CR>"),
+	dashboard.button("a", "  Alacritty Config", ":e ~/dotfiles/alacritty/.config/alacritty/alacritty.yml <CR>"),
+	dashboard.button("t", "  Tmux Config", ":e ~/dotfiles/tmux/.config/tmux/tmux.conf <CR>"),
 }
 
 local function footer()

@@ -17,3 +17,4 @@ require("user.impatient") -- source lua/user/impatient.lua
 require("user.project") -- source lua/user/project.lua
 require("user.alpha") -- source lua/user/alpha.lua
 require("user.whichkey") -- source lua/user/whichkey.lua
+require("user.colorizer") -- source lua/user/colorizer.lua

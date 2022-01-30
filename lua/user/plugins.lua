@@ -55,6 +55,7 @@ return packer.startup(function(use)
 	use("ahmedkhalf/project.nvim")
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
+  use("norcalli/nvim-colorizer.lua")
 
   -- tpope plugins
   use("tpope/vim-surround")

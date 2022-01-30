@@ -3,6 +3,11 @@ if not status_ok then
 	return
 end
 
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+keymap("n", "<C-h>", ":BufferLineCyclePrev<cr>", opts)
+keymap("n", "<C-l>", ":BufferLineCycleNext<cr>", opts)
+
 bufferline.setup({
 	options = {
 		numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,

@@ -56,6 +56,10 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
 
+  -- tpope plugins
+  use("tpope/vim-surround")
+  use("tpope/vim-repeat")
+
 	-- colorscheme
 	use("lunarvim/colorschemes")
 	-- use "lunarvim/darkplus.nvim"

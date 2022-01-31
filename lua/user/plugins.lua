@@ -56,6 +56,7 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
   use("norcalli/nvim-colorizer.lua")
+  -- use("lukas-reineke/indent-blankline.nvim")
 
   -- tpope plugins
   use("tpope/vim-surround")

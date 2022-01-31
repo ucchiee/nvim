@@ -27,7 +27,7 @@ keymap("n", "<M-k>", ":resize +2<CR>", opts)
 keymap("n", "<M-h>", ":vertical resize -2<CR>", opts)
 keymap("n", "<M-l>", ":vertical resize +2<CR>", opts)
 
--- Navigate buffers
+-- Navigate buffers (these will be overwitten by BufferLine)
 keymap("n", "<C-l>", ":bnext<CR>", opts)
 keymap("n", "<C-h>", ":bprevious<CR>", opts)
 
@@ -43,33 +43,24 @@ keymap("n", "<leader>N", "Nzz", opts)
 
 keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch!<CR>", opts)
 
--- Insert --
--- Press jk fast to enter
+-- Press jk fast to enter <ESC>
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
--- Visual --
--- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
-
 -- Move text up and down
-keymap("n", "|", ":m '<-2<CR>gv", opts)
-keymap("n", "\\", ":m '>+1<CR>gv", opts)
-keymap("v", "p", '"_dP', opts)
+keymap("n", "\\", ":m .+1<CR>", opts)
+keymap("n", "|", ":m .-2<CR>", opts)
+keymap("v", "\\", ":m '>+1<CR>gv", opts)
+keymap("v", "|", ":m '<-2<CR>gv", opts)
 
--- Visual Block --
--- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- Do the last substitute (this is on by default)
+keymap("n", "&", ":&&<CR>", opts)
+keymap("x", "&", ":&&<CR>", opts)
 
 -- Command Mode --
 -- Better command line filtering
 keymap("c", "<C-n>", "<Down>", opts)
 keymap("c", "<C-p>", "<Up>", opts)
-
 
 -- plugin keybinding
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)

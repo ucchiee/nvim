@@ -56,19 +56,19 @@ return packer.startup(function(use)
 	use("ahmedkhalf/project.nvim")
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
-  use("norcalli/nvim-colorizer.lua")
-  -- use("lukas-reineke/indent-blankline.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	-- use("lukas-reineke/indent-blankline.nvim")
 
-  -- tpope plugins
-  use("tpope/vim-surround")
-  use("tpope/vim-repeat")
+	-- tpope plugins
+	use("tpope/vim-surround")
+	use("tpope/vim-repeat")
 
 	-- colorscheme
 	use("lunarvim/colorschemes")
 	-- use "lunarvim/darkplus.nvim"
 	use("folke/tokyonight.nvim")
 	use("rebelot/kanagawa.nvim")
-  use 'rmehri01/onenord.nvim'
+	use("rmehri01/onenord.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -87,6 +87,12 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use({
+		"rmagatti/goto-preview",
+		config = function()
+			require("goto-preview").setup({})
+		end,
+	})
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

@@ -114,14 +114,11 @@ local mappings = {
 		k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
 		s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
 		S = { "<cmd>lua require 'gitsigns'.stage_buffer()", "Stage Buffer" },
-		u = {
-			"<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
-			"Undo Stage Hunk",
-		},
-		r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" }, -- doesnt seem to work
-		R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
+		u = { "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>", "Undo Stage Hunk" },
+		r = { '<cmd>lua require"gitsigns".detach()<CR><cmd>lua require"gitsigns".attach()<CR>', "Reload Gitsigns" },
 		p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
-		d = { "<cmd>Gitsigns diffthis HEAD<cr>", "Diff" },
+		D = { "<cmd>Gitsigns diffthis HEAD<cr>", "Diff" },
+		d = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
 		b = { "<cmd>Gitsigns blame_line<cr>", "Blame" },
 		B = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
 		o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
@@ -131,34 +128,26 @@ local mappings = {
 	l = {
 		name = "LSP",
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-		d = {
-			"<cmd>Telescope lsp_document_diagnostics<cr>",
-			"Document Diagnostics",
-		},
-		w = {
-			"<cmd>Telescope lsp_workspace_diagnostics<cr>",
-			"Workspace Diagnostics",
-		},
+		d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Document Diagnostics" },
+		w = { "<cmd>Telescope lsp_workspace_diagnostics<cr>", "Workspace Diagnostics" },
 		F = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
 		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-		j = {
-			"<cmd>lua vim.diagnostic.goto_next()<cr>",
-			"Next Diagnostic",
-		},
-		k = {
-			"<cmd>lua vim.diagnostic.goto_prev()<cr>",
-			"Prev Diagnostic",
-		},
+		j = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
+		k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
 		l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
 		q = { "<cmd>lua vim.diagnostic.set_loclist()<cr>", "Quickfix" },
 		R = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
 		s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-		S = {
-			"<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-			"Workspace Symbols",
+		S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" },
+		p = {
+			name = "Goto Preview",
+			d = { "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", "Definition" },
+			i = { "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", "Implementation" },
+			r = { "<cmd>lua require('goto-preview').goto_preview_references()<CR>", "References" },
+			P = { "<cmd>lua require('goto-preview').close_all_win()<CR>", "Close All" },
 		},
-		g = { "<cmd>FloatermNew lazygit<cr>", "Python" }, -- this is not lsp related
+		g = { "<cmd>FloatermNew lazygit<cr>", "Lazygit" }, -- this is not lsp related
 	},
 	s = {
 		name = "Search",

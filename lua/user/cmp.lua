@@ -93,11 +93,11 @@ cmp.setup({
 			"i",
 			"s",
 		}),
-    -- Priority is changed from <Tab> and <S-Tab>.
+		-- Priority is changed from <Tab> and <S-Tab>.
 		["<C-n>"] = cmp.mapping(function(fallback)
 			if luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()
-      elseif cmp.visible() then
+			elseif cmp.visible() then
 				cmp.select_next_item()
 			elseif luasnip.expandable() then
 				luasnip.expand()
@@ -113,7 +113,7 @@ cmp.setup({
 		["<c-p>"] = cmp.mapping(function(fallback)
 			if luasnip.jumpable(-1) then
 				luasnip.jump(-1)
-      elseif cmp.visible() then
+			elseif cmp.visible() then
 				cmp.select_prev_item()
 			else
 				fallback()
@@ -123,14 +123,14 @@ cmp.setup({
 			"s",
 		}),
 	},
-  formatting = {
-    fields = { "abbr", "kind", "menu" },
-    format = function(entry, vim_item)
-      local max_abbr_len = 80
-      if string.len(vim_item.abbr) > max_abbr_len then
-        vim_item.abbr = string.sub(vim_item.abbr, 1, max_abbr_len) .. "..."
-      end
-      vim_item.kind = (kind_icons[vim_item.kind] or '') .. vim_item.kind
+	formatting = {
+		fields = { "abbr", "kind", "menu" },
+		format = function(entry, vim_item)
+			local max_abbr_len = 80
+			if string.len(vim_item.abbr) > max_abbr_len then
+				vim_item.abbr = string.sub(vim_item.abbr, 1, max_abbr_len) .. "..."
+			end
+			vim_item.kind = (kind_icons[vim_item.kind] or "") .. vim_item.kind
 			vim_item.menu = ({
 				nvim_lua = "[NVIM_LUA]",
 				nvim_lsp = "[LSP]",
@@ -138,9 +138,9 @@ cmp.setup({
 				buffer = "[Buffer]",
 				path = "[Path]",
 			})[entry.source.name]
-      return vim_item
-    end,
-  },
+			return vim_item
+		end,
+	},
 	sources = {
 		{ name = "nvim_lsp" }, -- listed in this order
 		{ name = "luasnip" },

@@ -12,8 +12,8 @@ local diagnostics = {
 	sources = { "nvim_diagnostic" },
 	sections = { "error", "warn" },
 	symbols = { error = " ", warn = " " },
-	colored = false,
-	update_in_insert = false,
+	colored = true,
+	update_in_insert = true,
 	always_visible = true,
 }
 
@@ -26,14 +26,14 @@ local diff = {
 
 local mode = {
 	"mode",
-	fmt = function(str)
-		return "-- " .. str .. " --"
-	end,
+	-- fmt = function(str)
+	-- 	return "-- " .. str .. " --"
+	-- end,
 }
 
 local filetype = {
 	"filetype",
-	icons_enabled = false,
+	icons_enabled = true,
 	icon = nil,
 }
 
@@ -58,9 +58,9 @@ local progress = function()
 	return chars[index]
 end
 
-local spaces = function()
-	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
-end
+-- local spaces = function()
+-- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+-- end
 
 lualine.setup({
 	options = {
@@ -72,11 +72,11 @@ lualine.setup({
 		always_divide_middle = true,
 	},
 	sections = {
-		lualine_a = { branch, diagnostics },
-		lualine_b = { mode },
-		lualine_c = {},
+		lualine_a = { mode },
+		lualine_b = { branch },
+		lualine_c = { diff },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { diff, spaces, "encoding", filetype },
+		lualine_x = { diagnostics, "encoding", "fileformat", filetype },
 		lualine_y = { location },
 		lualine_z = { progress },
 	},

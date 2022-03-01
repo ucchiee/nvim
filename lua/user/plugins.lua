@@ -57,6 +57,9 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("folke/which-key.nvim")
 	use("norcalli/nvim-colorizer.lua")
+	use("mfussenegger/nvim-dap")
+	use("kana/vim-textobj-user")
+	use("kana/vim-textobj-entire")
 	-- use("lukas-reineke/indent-blankline.nvim")
 
 	-- tpope plugins

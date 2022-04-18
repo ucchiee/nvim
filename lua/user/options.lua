@@ -54,3 +54,12 @@ vim.cmd([[
   let g:netrw_list_hide=netrw_gitignore#Hide()
   let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 ]])
+
+-- IME settings
+-- TODO:this assumes MacOS, need to check OS
+vim.cmd([[
+if executable('im-select')
+  autocmd InsertLeave * :call system('im-select com.apple.keylayout.ABC')
+  autocmd CmdlineLeave * :call system('im-select com.apple.keylayout.ABC')
+endif
+]])

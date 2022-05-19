@@ -21,10 +21,12 @@ dashboard.section.buttons.val = {
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-  dashboard.button("=", "=============================================", ""),
+	dashboard.button("=", "=============================================", ""),
 	dashboard.button("i", "  Neovim Config", ":e ~/.config/nvim/init.lua <CR>"),
+	dashboard.button("d", "  Dotfiles README", ":e ~/dotfiles/README.md <CR>"),
 	dashboard.button("z", "  Zsh Config", ":e ~/dotfiles/zsh/.config/zsh/zshrc <CR>"),
 	dashboard.button("a", "  Alacritty Config", ":e ~/dotfiles/alacritty/.config/alacritty/alacritty.yml <CR>"),
+	dashboard.button("k", "  Kitty Config", ":e ~/dotfiles/kitty/.config/kitty/kitty.conf <CR>"),
 	dashboard.button("t", "  Tmux Config", ":e ~/dotfiles/tmux/.config/tmux/tmux.conf <CR>"),
 }
 

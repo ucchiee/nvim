@@ -51,7 +51,6 @@ return packer.startup(function(use)
 	use("kyazdani42/nvim-tree.lua")
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
-	use("nvim-lualine/lualine.nvim")
 	use("lewis6991/impatient.nvim")
 	use("ahmedkhalf/project.nvim")
 	use("goolord/alpha-nvim")
@@ -61,6 +60,13 @@ return packer.startup(function(use)
 	use("kana/vim-textobj-user")
 	use("kana/vim-textobj-entire")
 	-- use("lukas-reineke/indent-blankline.nvim")
+
+	-- status line
+	use("nvim-lualine/lualine.nvim")
+	use({
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
 
 	-- tpope plugins
 	use("tpope/vim-surround")

@@ -15,7 +15,7 @@ local flake8_config = {
 	"--ignore=E402,E203,E501,W503",
 	"--exclude=__init__.py",
 }
-local isort_config = { "--stdout", "--profile", "black", "-" }
+local isort_config = { "--profile", "black" }
 
 null_ls.setup({
 	debug = false,

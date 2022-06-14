@@ -63,3 +63,10 @@ if executable('im-select')
   autocmd CmdlineLeave * :call system('im-select com.apple.keylayout.ABC')
 endif
 ]])
+
+-- cursor settings
+vim.cmd([[
+  let &t_SI .= "\e[5 q"   " Start Insert
+  let &t_SR .= "\e[3 q"   " Start Replace
+  let &t_EI .= "\e[1 q"   " End Insert/Replace
+]])

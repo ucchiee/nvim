@@ -177,6 +177,19 @@ local mappings = {
 		-- ['h'] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		-- ['v'] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
+
+	d = {
+		name = "dap",
+		-- ["o"] = { ':lua require("dapui").open()', "open" },
+		-- ["c"] = { ':lua require("dapui").close()', "close" },
+		["t"] = { ':lua require("dapui").toggle()<cr>', "toggle" },
+		["e"] = { ':lua require("dapui").eval()<cr>', "eval" },
+		["b"] = { ':lua require("dap").toggle_breakpoint()<cr>', "breakpoint" },
+		["c"] = { ':lua require("dap").continue()<cr>', "continue" },
+		["n"] = { ':lua require("dap").step_over()<cr>', "step_over" },
+		["i"] = { ':lua require("dap").step_into()<cr>', "step_into" },
+		["o"] = { ':lua require("dap").step_out()<cr>', "step_out" },
+	},
 }
 
 local vopts = {

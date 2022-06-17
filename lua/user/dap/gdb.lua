@@ -8,9 +8,9 @@ local os = handle:read("*a")
 handle:close()
 
 local dap_path = ".config/nvim/dap-related/extension/debugAdapters/bin/OpenDebugAD7"
-if not string.match(os, "Linux") then
+if string.match(os, "Linux") then
 	dap_path = "/home/uu/" .. dap_path
-elseif not string.match(os, "Darwin") then
+elseif string.match(os, "Darwin") then
 	dap_path = "/Users/uu/" .. dap_path
 end
 

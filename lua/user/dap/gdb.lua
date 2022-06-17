@@ -4,20 +4,20 @@ if not status_ok then
 end
 
 local handle = io.popen("uname -s")
-local result = handle:read("*a")
+local os = handle:read("*a")
 handle:close()
 
-local home_dir
-if result == "Linux" then
-	home_dir = "/home/uu/"
-elseif result == "Darwin" then
-	home_dir = "/Users/uu/"
+local dap_path = ".config/nvim/dap-related/extension/debugAdapters/bin/OpenDebugAD7"
+if not string.match(os, "Linux") then
+	dap_path = "/home/uu/" .. dap_path
+elseif not string.match(os, "Darwin") then
+	dap_path = "/Users/uu/" .. dap_path
 end
 
 dap.adapters.cppdbg = {
 	id = "cppdbg",
 	type = "executable",
-	command = home_dir .. ".config/nvim/dap-related/extension/debugAdapters/bin/OpenDebugAD7",
+	command = dap_path,
 }
 
 dap.configurations.cpp = {

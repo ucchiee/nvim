@@ -9,3 +9,4 @@ end
 
 require("user.dap.dap-ui")
 require("user.dap.gdb")
+require("user.dap.keymap")

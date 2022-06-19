@@ -185,10 +185,14 @@ local mappings = {
 		["t"] = { ':lua require("dapui").toggle()<cr>', "toggle" },
 		["e"] = { ':lua require("dapui").eval()<cr>', "eval" },
 		["b"] = { ':lua require("dap").toggle_breakpoint()<cr>', "breakpoint" },
+		["B"] = { ':lua require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))<cr>', "Cbreakpoint" },
 		["c"] = { ':lua require("dap").continue()<cr>', "continue" },
 		["n"] = { ':lua require("dap").step_over()<cr>', "step_over" },
 		["i"] = { ':lua require("dap").step_into()<cr>', "step_into" },
 		["o"] = { ':lua require("dap").step_out()<cr>', "step_out" },
+		["r"] = { ':lua require("dap").run_last()<cr>', "run last" },
+		["h"] = { ':lua require("dap").run_to_cursor()<cr>', "run to cursor" },
+		["d"] = { ':lua require("dap").terminate()<cr>', "terminate" },
 	},
 }
 

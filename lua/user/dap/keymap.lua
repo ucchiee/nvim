@@ -1,5 +1,5 @@
 local keymap = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
+local opts = {}
 
 keymap("n", "F1", ':lua require("dap").step_into()<cr>', opts)
 keymap("n", "F2", ':lua require("dap").step_out()<cr>', opts)

@@ -192,7 +192,7 @@ local mappings = {
 		["o"] = { ':lua require("dap").step_out()<cr>', "step_out" },
 		["r"] = { ':lua require("dap").run_last()<cr>', "run last" },
 		["h"] = { ':lua require("dap").run_to_cursor()<cr>', "run to cursor" },
-		["d"] = { ':lua require("dap").terminate()<cr>', "terminate" },
+		["D"] = { ':lua require("dap").terminate()<cr>', "terminate" },
 	},
 }
 

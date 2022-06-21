@@ -33,6 +33,13 @@ dap.configurations.cpp = {
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = true,
+		setupCommands = {
+			{
+				text = "-enable-pretty-printing",
+				description = "enable pretty printing",
+				ignoreFailures = false,
+			},
+		},
 	},
 	{
 		name = "Attach to gdbserver :1234",
@@ -45,6 +52,29 @@ dap.configurations.cpp = {
 		program = function()
 			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
 		end,
+		setupCommands = {
+			{
+				text = "-enable-pretty-printing",
+				description = "enable pretty printing",
+				ignoreFailures = false,
+			},
+		},
+	},
+	{
+		-- If you get an "Operation not permitted" error using this, try disabling YAMA:
+		--  echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+		name = "Attach to process",
+		type = "cpp", -- Adjust this to match your adapter name (`dap.adapters.<name>`)
+		request = "attach",
+		pid = require("dap.utils").pick_process,
+		args = {},
+		setupCommands = {
+			{
+				text = "-enable-pretty-printing",
+				description = "enable pretty printing",
+				ignoreFailures = false,
+			},
+		},
 	},
 }
 dap.configurations.c = dap.configurations.cpp

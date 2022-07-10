@@ -77,10 +77,9 @@ return packer.startup(function(use)
 	use("tpope/vim-repeat")
 
 	-- colorscheme
-	use("lunarvim/colorschemes")
 	-- use "lunarvim/darkplus.nvim"
-	use("folke/tokyonight.nvim")
-	use("rebelot/kanagawa.nvim")
+	-- use("folke/tokyonight.nvim")
+	-- use("rebelot/kanagawa.nvim")
 	use("rmehri01/onenord.nvim")
 
 	-- cmp plugins

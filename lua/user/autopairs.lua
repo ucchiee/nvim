@@ -14,18 +14,15 @@ npairs.setup({
 		java = false,
 	},
 	disable_filetype = { "TelescopePrompt", "spectre_panel" },
-	fast_wrap = {
-		map = "<M-e>",
-		chars = { "{", "[", "(", '"', "'" },
-		pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
-		offset = 0, -- Offset from pattern match
-		end_key = "$",
-		keys = "qwertyuiopzxcvbnmasdfghjkl",
-		check_comma = true,
-		highlight = "PmenuSel",
-		highlight_grey = "LineNr",
-	},
+	fast_wrap = {},
 })
+
+local status_ok_rule, Rule = pcall(require, "nvim-autopairs.rule")
+if not status_ok_rule then
+	return
+end
+npairs.add_rule(Rule("$$", "$$", "tex"))
+
 
 -- local Rule = require("nvim-autopairs.rule")
 -- npairs.add_rules {
@@ -59,4 +56,4 @@ local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
 	return
 end
-cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
+cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())

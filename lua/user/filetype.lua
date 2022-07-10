@@ -1,14 +1,4 @@
 vim.cmd([[
-" Spell setting in markdowh and txt ---------{{{
-augroup spell
-  autocmd!
-  " autocmd FileType markdown,txt setlocal spell
-  autocmd FileType markdown,txt,tex setlocal wrap
-  autocmd FileType markdown,txt,tex setlocal complete+=k
-  autocmd FileType markdown,txt,tex setlocal shiftwidth=2
-augroup END
-" }}}
-
 " markdown mapping -------- {{{
 augroup md_headline
   autocmd!
@@ -42,3 +32,8 @@ augroup END
 
 onoremap in@ :<c-u>execute "normal! k$/[^ ]¥¥+@[^ ]¥¥+¥r:nohlsearch¥rviW"<cr>
 ]])
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+	pattern = { "markdown", "txt", "tex" },
+	command = "setlocal wrap complete+=k shiftwidth=2",
+})

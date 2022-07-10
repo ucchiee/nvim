@@ -9,13 +9,6 @@ augroup spell
 augroup END
 " }}}
 
-" Indentation setting ---------{{{
-" augroup indentation
-"   autocmd!
-"   autocmd FileType cpp,c setlocal shiftwidth=4
-" augroup END
-" }}}
-
 " markdown mapping -------- {{{
 augroup md_headline
   autocmd!

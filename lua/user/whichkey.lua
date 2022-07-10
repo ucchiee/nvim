@@ -97,6 +97,7 @@ local mappings = {
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 	["v"] = { "<C-w>v", "Split Right" },
 	["h"] = { "<C-w>s", "Split Down" },
+	["r"] = { ":so ~/.config/nvim/init.lua<cr>", "Reload init.lua" },
 
 	p = {
 		name = "Packer",

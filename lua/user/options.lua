@@ -30,8 +30,8 @@ local options = {
   numberwidth = 4,                         -- set number column width to 2 {default 4}
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
-  -- scrolloff = 8,                           -- is one of my fav
-  -- sidescrolloff = 8,
+  scrolloff = 4,                           -- is one of my fav
+  sidescrolloff = 4,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
@@ -58,12 +58,12 @@ vim.cmd([[
 
 -- IME settings
 -- TODO:this assumes MacOS, need to check OS
-vim.cmd([[
-if executable('im-select')
-  autocmd InsertLeave * :call system('im-select com.apple.keylayout.ABC')
-  autocmd CmdlineLeave * :call system('im-select com.apple.keylayout.ABC')
-endif
-]])
+-- vim.cmd([[
+-- if executable('im-select')
+--   autocmd InsertLeave * :call system('im-select com.apple.keylayout.ABC')
+--   autocmd CmdlineLeave * :call system('im-select com.apple.keylayout.ABC')
+-- endif
+-- ]])
 
 -- cursor settings
 vim.cmd([[

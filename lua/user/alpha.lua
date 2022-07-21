@@ -26,7 +26,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("d", "  Dotfiles README", ":e ~/dotfiles/README.md <CR>"),
 	dashboard.button("z", "  Zsh Config", ":e ~/dotfiles/zsh/.config/zsh/zshrc <CR>"),
 	dashboard.button("a", "  Alacritty Config", ":e ~/dotfiles/alacritty/.config/alacritty/alacritty.yml <CR>"),
-	dashboard.button("k", "  Kitty Config", ":e ~/dotfiles/kitty/.config/kitty/kitty.conf <CR>"),
+	dashboard.button("y", "  Kitty Config", ":e ~/dotfiles/kitty/.config/kitty/kitty.conf <CR>"),
 	dashboard.button("t", "  Tmux Config", ":e ~/dotfiles/tmux/.config/tmux/tmux.conf <CR>"),
 }
 

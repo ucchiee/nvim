@@ -24,3 +24,4 @@ require("user.colorizer") -- source lua/user/colorizer.lua
 require("user.indentline") -- source lua/user/indentline.lua
 require("user.dap") -- source lua/user/dap/init.lua
 require("user.betterescape") -- source lua/user/betterescape.lua
+require("user.nvim-ufo") -- source lua/user/nvim-ufo.lua

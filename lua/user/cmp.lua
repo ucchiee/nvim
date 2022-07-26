@@ -131,6 +131,17 @@ cmp.setup({
 	},
 })
 
+cmp.setup.cmdline(":", {
+	sources = {
+		{ name = "cmdline" },
+	},
+})
+cmp.setup.cmdline("/", {
+	sources = {
+		{ name = "buffer" },
+	},
+})
+
 -- Pay attention not to be overwritten by other settings (especially colorscheme)
 vim.cmd([[
 " gray

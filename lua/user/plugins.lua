@@ -88,6 +88,8 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-cmdline") -- cmdline completions
 	use("hrsh7th/cmp-nvim-lua") -- nvim api completion
 	use("hrsh7th/cmp-nvim-lsp") -- lsp
+	use("hrsh7th/cmp-cmdline") -- command line
+	-- use("hrsh7th/cmp-cmdline-history") -- command line
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 
 	-- snippets

@@ -25,3 +25,4 @@ require("user.indentline") -- source lua/user/indentline.lua
 require("user.dap") -- source lua/user/dap/init.lua
 require("user.betterescape") -- source lua/user/betterescape.lua
 require("user.nvim-ufo") -- source lua/user/nvim-ufo.lua
+require("user.neoscroll")  -- source lua/user/neoscroll.lua

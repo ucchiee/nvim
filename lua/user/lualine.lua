@@ -73,7 +73,7 @@ lualine.setup({
 		theme = "gruvbox-material",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
-		disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
+		-- disabled_filetypes = { "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
     globalstatus = true,
 	},

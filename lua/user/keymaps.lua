@@ -48,8 +48,8 @@ keymap("i", "kj", "<ESC>", opts)
 -- Move text up and down
 keymap("n", "\\", ":m .+1<CR>", opts)
 keymap("n", "|", ":m .-2<CR>", opts)
-keymap("v", "\\", ":m '>+1<CR>gv", opts)
-keymap("v", "|", ":m '<-2<CR>gv", opts)
+-- keymap("v", "\\", ":m '>+1<CR>gv", opts)
+-- keymap("v", "|", ":m '<-2<CR>gv", opts)
 
 -- Do the last substitute (this is on by default)
 keymap("n", "&", ":&&<CR>", opts)

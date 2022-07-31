@@ -28,3 +28,4 @@ require("user.nvim-ufo") -- source lua/user/nvim-ufo.lua
 require("user.neoscroll")  -- source lua/user/neoscroll.lua
 require("user.tree-surfer") -- source lua/user/tree-surfer.lua
 require("user.symbol-outline")  -- source lua/user/symbol-outline.lua
+require("user.gitlinker") -- source lua/user/gitlinker.lua

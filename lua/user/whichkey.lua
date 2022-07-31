@@ -124,6 +124,11 @@ local mappings = {
 		B = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
 		o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
 		c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+		y = { '<cmd>lua require"gitlinker".get_buf_range_url("n")<cr>', "Get link" },
+		Y = {
+			'<cmd>lua require"gitlinker".get_buf_range_url("n", {action_callback = require"gitlinker.actions".open_in_browser})<cr>',
+			"Open in browser",
+		},
 	},
 
 	l = {
@@ -213,6 +218,14 @@ local vopts = {
 local vmappings = {
 	["/"] = { '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<cr>', "Comment" },
 	["lF"] = { ":'<,'>lua vim.lsp.buf.range_formatting()<cr>", "Range Format" },
+	g = {
+		name = "Git",
+		y = { '<cmd>lua require"gitlinker".get_buf_range_url("v")<cr>', "Get link" },
+		Y = {
+			'<cmd>lua require"gitlinker".get_buf_range_url("v", {action_callback = require"gitlinker.actions".open_in_browser})<cr>',
+			"Open in browser",
+		},
+	},
 }
 
 which_key.setup(setup)

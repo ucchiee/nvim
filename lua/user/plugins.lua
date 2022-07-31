@@ -127,6 +127,10 @@ return packer.startup(function(use)
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 	use("tpope/vim-fugitive")
+	use({
+		"ruifm/gitlinker.nvim",
+		requires = "nvim-lua/plenary.nvim",
+	})
 
 	-- markdown
 	use({
@@ -145,7 +149,7 @@ return packer.startup(function(use)
 	-- syntax tree surfer
 	use("ziontee113/syntax-tree-surfer")
 
-  -- symbol
+	-- symbol
 	use("simrat39/symbols-outline.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim

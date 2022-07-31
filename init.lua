@@ -30,3 +30,6 @@ require("user.tree-surfer") -- source lua/user/tree-surfer.lua
 require("user.symbol-outline")  -- source lua/user/symbol-outline.lua
 require("user.gitlinker") -- source lua/user/gitlinker.lua
 require("user.todo-comments") -- source lua/user/todo-comments.lua
+require("user.winshift") -- source lua/user/winshift.lua
+require("user.dial") -- source lua/user/dial.lua
+require("user.hlslens") -- source lua/user/hlslens.lua

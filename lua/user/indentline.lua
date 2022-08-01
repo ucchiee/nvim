@@ -1,9 +1,3 @@
-vim.opt.list = true
--- vim.opt.listchars:append("eol:↴")
-vim.opt.listchars:append("space: ")
-vim.opt.listchars:append("tab:  ")
-vim.opt.listchars:append("trail:-")
-
 local status_ok, indentline = pcall(require, "indent_blankline")
 if not status_ok then
 	return

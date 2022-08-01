@@ -41,6 +41,12 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
+vim.opt.list = true
+-- vim.opt.listchars:append("eol:↴")
+vim.opt.listchars:append("space: ")
+vim.opt.listchars:append("tab:  ")
+vim.opt.listchars:append("trail:-")
+
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd("lang en_US.UTF-8")
 vim.cmd([[set iskeyword+=-]])

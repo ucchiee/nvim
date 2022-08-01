@@ -163,6 +163,7 @@ return packer.startup(function(use)
 	use("monaqa/dial.nvim")
 	use({ "kevinhwang91/nvim-hlslens" })
 	use("petertriho/nvim-scrollbar")
+	use("andymass/vim-matchup")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

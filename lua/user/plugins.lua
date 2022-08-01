@@ -164,6 +164,11 @@ return packer.startup(function(use)
 	use({ "kevinhwang91/nvim-hlslens" })
 	use("petertriho/nvim-scrollbar")
 	use("andymass/vim-matchup")
+	use({
+		"danymat/neogen",
+		requires = "nvim-treesitter/nvim-treesitter",
+		tag = "*",
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

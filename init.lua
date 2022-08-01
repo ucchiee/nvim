@@ -36,3 +36,4 @@ require("user.hlslens") -- source lua/user/hlslens.lua
 require("user.fidget") -- source lua/user/fidget.lua
 require("user.scrollbar") -- source lua/user/scrollbar.lua
 require("user.mathup") -- source lua/user/mathup.lua
+require("user.neogen") -- source lua/user/neogen.lua

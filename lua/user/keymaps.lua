@@ -44,6 +44,7 @@ keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch!<CR>", opts)
 -- Press jk fast to enter <ESC>
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+keymap("i", "<C-C>", "<ESC>", opts)
 
 -- Move text up and down
 keymap("n", "\\", ":m .+1<CR>", opts)

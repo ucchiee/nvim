@@ -11,7 +11,6 @@ augroup END
 augroup filetype_lua
   autocmd!
   autocmd FileType lua :iabbrev <buffer> fnc function<space>name()<space>end<left><left><left>
-  autocmd FileType lua :iabbrev <buffer> function NOPENOPENOPE
 augroup END
 " }}}
 

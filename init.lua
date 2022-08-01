@@ -33,3 +33,4 @@ require("user.todo-comments") -- source lua/user/todo-comments.lua
 require("user.winshift") -- source lua/user/winshift.lua
 require("user.dial") -- source lua/user/dial.lua
 require("user.hlslens") -- source lua/user/hlslens.lua
+require("user.fidget") -- source lua/user/fidget.lua

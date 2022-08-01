@@ -170,6 +170,7 @@ return packer.startup(function(use)
 		tag = "*",
 	})
 	use("lukas-reineke/indent-blankline.nvim")
+	use("zdcthomas/medit")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

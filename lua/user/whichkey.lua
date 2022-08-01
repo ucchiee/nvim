@@ -98,6 +98,7 @@ local mappings = {
 	["v"] = { "<C-w>v", "Split Right" },
 	["h"] = { "<C-w>s", "Split Down" },
 	["r"] = { ":so ~/.config/nvim/init.lua<cr>", "Reload init.lua" },
+	["q"] = { "<Plug>MEdit", "Edit Macros" },
 
 	p = {
 		name = "Packer",

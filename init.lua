@@ -37,3 +37,4 @@ require("user.fidget") -- source lua/user/fidget.lua
 require("user.scrollbar") -- source lua/user/scrollbar.lua
 require("user.mathup") -- source lua/user/mathup.lua
 require("user.neogen") -- source lua/user/neogen.lua
+require("user.indent_blankline") -- source lua/user/indent_blankline.lua

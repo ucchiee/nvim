@@ -117,4 +117,7 @@ telescope.setup({
 
 telescope.load_extension("media_files")
 telescope.load_extension("fzf")
-telescope.load_extension("frecency")
+local frecency_ok, _ = pcall(require, "telescope-frecency.nvim")
+if frecency_ok then
+	telescope.load_extension("frecency")
+end

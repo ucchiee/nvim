@@ -89,9 +89,9 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-cmdline") -- cmdline completions
 	use("hrsh7th/cmp-nvim-lua") -- nvim api completion
 	use("hrsh7th/cmp-nvim-lsp") -- lsp
-	use("hrsh7th/cmp-cmdline") -- command line
 	-- use("hrsh7th/cmp-cmdline-history") -- command line
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
+	use("onsails/lspkind.nvim")
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
@@ -103,7 +103,6 @@ return packer.startup(function(use)
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use("folke/lsp-colors.nvim")
-	use("onsails/lspkind.nvim")
 	use("j-hui/fidget.nvim")
 	use("glepnir/lspsaga.nvim")
 	use("folke/trouble.nvim")

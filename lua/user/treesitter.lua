@@ -10,7 +10,26 @@ configs.setup({
 	highlight = {
 		enable = true, -- false will disable the whole extension
 		disable = { "" }, -- list of language that will be disabled
-		additional_vim_regex_highlighting = true,
+		-- additional_vim_regex_highlighting = true,
 	},
 	indent = { enable = true, disable = { "yaml" } },
+})
+
+local ok, spellsitter = pcall(require, "spellsitter")
+if not ok then
+	return
+end
+
+spellsitter.setup()
+
+local my_augroup = vim.api.nvim_create_augroup("my_augroup", { clear = true })
+-- vim.api.nvim_create_autocmd("FileType", {
+-- 	pattern = {}, -- disable spellchecking for these filetypes
+-- 	command = "setlocal nospell",
+-- 	group = my_augroup,
+-- })
+vim.api.nvim_create_autocmd("TermOpen", {
+	pattern = "*", -- disable spellchecking in the embeded terminal
+	command = "setlocal nospell",
+	group = my_augroup,
 })

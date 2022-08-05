@@ -10,4 +10,4 @@ indent_blankline.setup({
 	show_current_context = true,
 	show_current_context_start = false,
 })
-vim.cmd([[highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#b26dc5 gui=nocombine]])

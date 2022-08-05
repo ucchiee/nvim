@@ -105,6 +105,7 @@ return packer.startup(function(use)
 	use("folke/lsp-colors.nvim")
 	use("j-hui/fidget.nvim")
 	use("glepnir/lspsaga.nvim")
+	use("ray-x/lsp_signature.nvim")
 	use("folke/trouble.nvim")
 	use({
 		"rmagatti/goto-preview",

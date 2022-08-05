@@ -105,6 +105,7 @@ return packer.startup(function(use)
 	use("folke/lsp-colors.nvim")
 	use("onsails/lspkind.nvim")
 	use("j-hui/fidget.nvim")
+	use("folke/trouble.nvim")
 	use({
 		"rmagatti/goto-preview",
 		config = function()

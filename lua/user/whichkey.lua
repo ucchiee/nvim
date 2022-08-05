@@ -161,6 +161,14 @@ local mappings = {
 		},
 		g = { "<cmd>FloatermNew lazygit<cr>", "Lazygit" }, -- this is not lsp related
 	},
+	x = {
+		name = "Trouble",
+		x = { "<cmd>Trouble<cr>", "Trouble" },
+		w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
+		d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document Diagnostics" },
+		q = { "<cmd>TroubleToggle quickfix<cr>", "Quickfix" },
+		l = { "<cmd>TroubleToggle loclist<cr>", "Loclist" },
+	},
 	s = {
 		name = "Search",
 		b = { ":Telescope git_branches<cr>", "Checkout branch" },

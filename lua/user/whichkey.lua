@@ -138,18 +138,18 @@ local mappings = {
 
 	l = {
 		name = "LSP",
-		a = { ":Telescope lsp_code_actions<cr>", "Code Action" },
+		a = { "<cmd>Lspsaga code_action<CR>", "Code Action" },
 		d = { ":Telescope lsp_definitions<cr>", "Definitions" },
 		D = { ":Telescope diagnostics<cr>", "Diagnostics" },
 		F = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
 		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-		j = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
-		k = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev Diagnostic" },
+		j = { "<cmd>Lspsaga diagnostic_jump_next<CR>", "Next Diagnostic" },
+		k = { "<cmd>Lspsaga diagnostic_jump_prev<CR>", "Prev Diagnostic" },
 		l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
 		q = { "<cmd>lua vim.diagnostic.set_loclist()<cr>", "Quickfix" },
 		r = { ":Telescope lsp_references<cr>", "References" },
-		R = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+		R = { "<cmd>Lspsaga rename<CR>", "Rename" },
 		s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
 		S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" },
 		p = {
@@ -238,6 +238,10 @@ local vmappings = {
 			'<cmd>lua require"gitlinker".get_buf_range_url("v", {action_callback = require"gitlinker.actions".open_in_browser})<cr>',
 			"Open in browser",
 		},
+	},
+	l = {
+		name = "lsp",
+		a = { "<cmd><C-U>Lspsaga range_code_action<CR>", "Code Action" },
 	},
 }
 

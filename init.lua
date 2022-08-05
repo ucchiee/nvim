@@ -39,4 +39,5 @@ require("user.mathup") -- source lua/user/mathup.lua
 require("user.neogen") -- source lua/user/neogen.lua
 require("user.indent_blankline") -- source lua/user/indent_blankline.lua
 require("user.vim-asterisk") -- source lua/user/vim-asterisk.lua
+require("user.lspsaga") -- source lua/user/lspsaga.lua
 require("user.trouble") -- source lua/user/lsp_signature.lua

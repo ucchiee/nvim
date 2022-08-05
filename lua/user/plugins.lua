@@ -57,7 +57,7 @@ return packer.startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 	use("kana/vim-textobj-user")
 	use("kana/vim-textobj-entire")
-	-- use("lukas-reineke/indent-blankline.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
 	-- use("max397574/better-escape.nvim")
 
 	-- debug adapter protocol

@@ -37,6 +37,13 @@ cmp.setup({
 		["<C-e>"] = cmp.mapping(cmp.mapping.close(), { "i", "c" }),
 		["<Down>"] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
 		["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
+		["<C-l>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				return cmp.complete_common_string()
+			end
+			fallback()
+		end, { "i", "c" }),
+
 		["<C-n>"] = cmp.mapping({
 			i = function(_)
 				if luasnip.expand_or_jumpable() then
@@ -109,9 +116,11 @@ cmp.setup.cmdline(":", {
 	},
 })
 cmp.setup.cmdline("/", {
-	sources = {
-		{ name = "buffer" },
-	},
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
+		{ name = "cmdline" },
+	}),
 })
 
 -- Pay attention not to be overwritten by other settings (especially colorscheme)

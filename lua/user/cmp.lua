@@ -37,14 +37,28 @@ cmp.setup({
 			i = cmp.mapping.abort(),
 			c = cmp.mapping.abort(),
 		}),
+		["<Down>"] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
+		["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), { "i" }),
+		["<C-n>"] = cmp.mapping({
+			i = function(_)
+				if luasnip.expand_or_jumpable() then
+					luasnip.expand_or_jump()
+				end
+			end,
+		}),
+		["<C-p>"] = cmp.mapping({
+			i = function(_)
+				if luasnip.jumpable(-1) then
+					luasnip.jump(-1)
+				end
+			end,
+		}),
 		-- Accept currently selected item. If none selected, `select` first item.
 		-- Set `select` to `false` to only confirm explicitly selected items.
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
 			elseif has_words_before() then
 				cmp.complete()
 			else
@@ -58,8 +72,6 @@ cmp.setup({
 		["<S-Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
-			elseif luasnip.jumpable(-1) then
-				luasnip.jump(-1)
 			else
 				fallback()
 			end

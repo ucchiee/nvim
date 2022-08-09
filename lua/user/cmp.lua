@@ -50,12 +50,18 @@ cmp.setup({
 					luasnip.expand_or_jump()
 				end
 			end,
+			c = function(fallback)
+				fallback()
+			end,
 		}),
 		["<C-p>"] = cmp.mapping({
 			i = function(_)
 				if luasnip.jumpable(-1) then
 					luasnip.jump(-1)
 				end
+			end,
+			c = function(fallback)
+				fallback()
 			end,
 		}),
 		-- Accept currently selected item. If none selected, `select` first item.

@@ -58,8 +58,8 @@ keymap("x", "&", ":&&<CR>", opts)
 
 -- Command Mode --
 -- Better command line filtering
--- keymap("c", "<C-n>", "<Down>", opts)
--- keymap("c", "<C-p>", "<Up>", opts)
+keymap("c", "<C-n>", "<Down>", opts)
+keymap("c", "<C-p>", "<Up>", opts)
 
 -- plugin keybinding
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)

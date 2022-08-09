@@ -4,7 +4,7 @@ if not ok then
 end
 scrollbar.setup({
 	handle = {
-		color = "#7c6f64",
+		color = "#7a6f6f",
 	},
 	marks = {
 		Search = { color = "#e78a4e" },

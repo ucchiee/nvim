@@ -149,6 +149,7 @@ return packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+	use("AckslD/nvim-FeMaco.lua")
 
 	-- Folding
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })

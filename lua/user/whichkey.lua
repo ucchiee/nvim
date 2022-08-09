@@ -218,6 +218,11 @@ local mappings = {
 		["h"] = { ':lua require("dap").run_to_cursor()<cr>', "run to cursor" },
 		["D"] = { ':lua require("dap").terminate()<cr>', "terminate" },
 	},
+	m = {
+		name = "MD",
+		["p"] = { "<Plug>MarkdownPreview<cr>", "Preview" },
+		["c"] = { ":FeMaco<cr>", "Edit Code" },
+	},
 }
 
 local vopts = {

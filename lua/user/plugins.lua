@@ -176,7 +176,6 @@ return packer.startup(function(use)
 		requires = "nvim-treesitter/nvim-treesitter",
 		tag = "*",
 	})
-	use("lukas-reineke/indent-blankline.nvim")
 	use("zdcthomas/medit")
 	use("haya14busa/vim-asterisk")
 

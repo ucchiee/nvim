@@ -180,6 +180,7 @@ local mappings = {
 		C = { ":Telescope commands<cr>", "Commands" },
 		M = { ":Telescope man_pages<cr>", "Man Pages" },
 		R = { ":Telescope registers<cr>", "Registers" },
+		f = { ":Telescope find_files<cr>", "Find files" },
 	},
 
 	j = {

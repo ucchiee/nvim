@@ -34,8 +34,8 @@ keymap("n", "|", ":m .-2<CR>", opts)
 keymap("n", "\\", ":m .+1<CR>", opts)
 
 -- Useful binding
-keymap("n", "<leader>o", "o<esc>^C", opts)
-keymap("n", "<leader>O", "O<esc>^C", opts)
+keymap("n", "<leader>o", 'o<esc>^"_C', opts)
+keymap("n", "<leader>O", 'O<esc>^"_C', opts)
 keymap("n", "<leader>n", "nzz", opts)
 keymap("n", "<leader>N", "Nzz", opts)
 

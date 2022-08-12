@@ -80,7 +80,6 @@ local opts = {
 
 local mappings = {
 	["/"] = { '<cmd>lua require("Comment.api").toggle_current_linewise()<cr>', "Comment" },
-	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	["b"] = {
 		"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Buffers",
@@ -104,6 +103,10 @@ local mappings = {
 	["r"] = { ":so ~/.config/nvim/init.lua<cr>", "Reload init.lua" },
 	["q"] = { "<Plug>MEdit", "Edit Macros" },
 
+	a = {
+		name = "AutoPair",
+		r = { ":lua require('nvim-autopairs').disable()<cr>:lua require('nvim-autopairs').enable()<cr>", "Reset" },
+	},
 	p = {
 		name = "Packer",
 		c = { "<cmd>PackerCompile<cr>", "Compile" },

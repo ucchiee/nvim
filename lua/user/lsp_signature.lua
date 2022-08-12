@@ -8,4 +8,5 @@ signature.setup({
 	handler_opts = {
 		border = "rounded",
 	},
+	toggle_key = "<C-;>",
 })

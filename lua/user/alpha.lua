@@ -31,12 +31,18 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	-- NOTE: requires the fortune-mod package to work
-	-- local handle = io.popen("fortune")
-	-- local fortune = handle:read("*a")
-	-- handle:close()
-	-- return fortune
-	return "ucchiee.com"
+	-- local total_plugins = #vim.tbl_keys(packer_plugins)
+	local datetime = os.date(" %d-%m-%Y   %H:%M:%S")
+	return datetime
+		-- .. "   "
+		-- .. total_plugins
+		-- .. " plugins"
+		.. "   v"
+		.. vim.version().major
+		.. "."
+		.. vim.version().minor
+		.. "."
+		.. vim.version().patch
 end
 
 dashboard.section.footer.val = footer()

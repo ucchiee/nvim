@@ -88,11 +88,11 @@ local mappings = {
 	["w"] = { "<cmd>w!<cr>", "Save" },
 	-- ["c"] = { "<cmd>Bdelete!<cr>", "Close Buffer" },  -- use <C-C>
 	-- ["h"] = { "<cmd>nohlsearch<cr>", "No Highlight" },  -- use <esc><esc>
-	["f"] = {
+	["F"] = {
 		"<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
 		"Find files",
 	},
-	["F"] = {
+	["f"] = {
 		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Find files",
 	},
@@ -221,6 +221,7 @@ local mappings = {
 		["r"] = { ':lua require("dap").run_last()<cr>', "run last" },
 		["h"] = { ':lua require("dap").run_to_cursor()<cr>', "run to cursor" },
 		["D"] = { ':lua require("dap").terminate()<cr>', "terminate" },
+		["R"] = { ':lua require("dap").clear_breakpoints()<cr>', "clear breakpoint" },
 	},
 	m = {
 		name = "MD",

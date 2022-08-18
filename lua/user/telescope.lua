@@ -112,6 +112,9 @@ telescope.setup({
 			case_mode = "smart_case", -- or "ignore_case" or "respect_case"
 			-- the default case_mode is "smart_case"
 		},
+		frecency = {
+			default_workspace = "CWD",
+		},
 	},
 })
 

@@ -88,11 +88,11 @@ local mappings = {
 	["w"] = { "<cmd>w!<cr>", "Save" },
 	-- ["c"] = { "<cmd>Bdelete!<cr>", "Close Buffer" },  -- use <C-C>
 	-- ["h"] = { "<cmd>nohlsearch<cr>", "No Highlight" },  -- use <esc><esc>
-	["F"] = {
+	["f"] = {
 		"<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
 		"Find files",
 	},
-	["f"] = {
+	["F"] = {
 		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Find files",
 	},

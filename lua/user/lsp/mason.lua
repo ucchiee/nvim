@@ -51,25 +51,25 @@ local function set_buf_key(bufnr)
   vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 end
 
-local function lsp_highlight_document(client)
-  -- Set autocommands conditional on server_capabilities
-  if client.resolved_capabilities.document_highlight then
-    vim.api.nvim_exec(
-      [[
-      augroup lsp_document_highlight
-        autocmd! * <buffer>
-        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
-      augroup END
-    ]] ,
-      false
-    )
-  end
-end
+-- local function lsp_highlight_document(client)
+  -- -- Set autocommands conditional on server_capabilities
+  -- if client.resolved_capabilities.document_highlight then
+    -- vim.api.nvim_exec(
+      -- [[
+      -- augroup lsp_document_highlight
+        -- autocmd! * <buffer>
+        -- autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+        -- autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+      -- augroup END
+    -- ]] ,
+      -- false
+    -- )
+  -- end
+-- end
 
 local function on_attach(client, bufnr)
   set_buf_key(bufnr)
-  lsp_highlight_document(client)
+  --[[ lsp_highlight_document(client) ]]
 end
 
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())

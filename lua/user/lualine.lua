@@ -45,7 +45,7 @@ local diagnostics = {
 	symbols = { error = " ", warn = " " },
 	colored = true,
 	update_in_insert = true,
-	always_visible = true,
+	always_visible = false,
 	padding = { left = 1, right = 0 },
 	cond = hide_in_width,
 }

@@ -73,7 +73,7 @@ local filetype = {
 local branch = {
 	"branch",
 	icons_enabled = true,
-	icon = "",
+	icon = "", -- 
 }
 
 local location = {
@@ -85,6 +85,31 @@ local location = {
 local progress = function()
 	return "%p%%/%L"
 end
+
+local separator = function()
+	return "%="
+end
+
+local lsp_indicator = {
+	function()
+		local msg = "No Active Lsp"
+		local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
+		local clients = vim.lsp.get_active_clients()
+		if next(clients) == nil then
+			return msg
+		end
+		for _, client in ipairs(clients) do
+			local filetypes = client.config.filetypes
+			if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
+				return client.name
+			end
+		end
+		return msg
+	end,
+	icon = " LSP:",
+	color = { gui = "bold" },
+	cond = hide_in_width,
+}
 
 -- local spaces = function()
 -- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
@@ -103,7 +128,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { mode },
 		lualine_b = { branch },
-		lualine_c = { custom_fname, diff },
+		lualine_c = { custom_fname, diff, separator, lsp_indicator },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = {
 			diagnostics,

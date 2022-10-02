@@ -67,10 +67,10 @@ return packer.startup({
 
 		-- status line
 		use("nvim-lualine/lualine.nvim")
-		use({
-			"SmiteshP/nvim-gps",
-			requires = "nvim-treesitter/nvim-treesitter",
-		})
+		--[[ use({ ]]
+		--[[ 	"SmiteshP/nvim-navic", ]]
+		--[[ 	requires = "neovim/nvim-lspconfig", ]]
+		--[[ }) ]]
 
 		-- tpope plugins
 		use("tpope/vim-surround")

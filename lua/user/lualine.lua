@@ -83,7 +83,7 @@ local location = {
 
 -- cool function for progress
 local progress = function()
-	return "%p%%/%L"
+	return "%l/%L:%c"
 end
 
 local separator = function()
@@ -107,7 +107,7 @@ local lsp_indicator = {
 		return msg
 	end,
 	icon = " LSP:",
-	color = { gui = "bold" },
+	color = { fg = "#ffffff", gui = "bold" },
 	cond = hide_in_width,
 }
 
@@ -141,11 +141,10 @@ lualine.setup({
 					dos = "CRLF",
 					mac = "CR",
 				},
-				padding = { left = 1, right = 0 },
+				padding = { left = 1, right = 1 },
 			},
-			filetype,
 		},
-		lualine_y = { location },
+		lualine_y = { filetype },
 		lualine_z = { progress },
 	},
 	inactive_sections = {

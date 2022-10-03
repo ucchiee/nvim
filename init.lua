@@ -15,7 +15,6 @@ require("user.comment") -- ousrce lua/user/comment.lua
 require("user.gitsigns") -- source lua/user/gitsigns.lua
 require("user.nvim-tree") -- source lua/user/nvim-tree.lua
 require("user.bufferline") -- source lua/user/bufferline.lua
-require("user.gps") -- source lua/user/gps.lua, needs to be call before lualine
 require("user.lualine") -- source lua/user/lualine.lua
 require("user.project") -- source lua/user/project.lua
 require("user.alpha") -- source lua/user/alpha.lua

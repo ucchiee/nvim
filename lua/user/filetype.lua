@@ -35,5 +35,5 @@ onoremap in@ :<c-u>execute "normal! k$/[^ ]¥¥+@[^ ]¥¥+¥r:nohlsearch¥rviW"<
 vim.api.nvim_create_autocmd({ "FileType" }, {
 	group = vim.api.nvim_create_augroup("TextGroup", { clear = true }),
 	pattern = { "markdown", "txt", "tex" },
-	command = "setlocal wrap complete+=k shiftwidth=2 spell",
+	command = "setlocal wrap complete+=k shiftwidth=2 spelllang+=cjk spell",
 })

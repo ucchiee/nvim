@@ -4,6 +4,7 @@ require("user.keymaps") -- source lua/user/keymaps.lua
 require("user.plugins") -- source lua/user/plugins.lua
 require("user.impatient") -- source lua/user/impatient.lua
 require("user.colorscheme") -- source lua/user/colorscheme.lua
+require("user.navic") -- source ./lua/user/navic.lua
 require("user.cmp") -- source lua/user/cmp.lua
 require("user.lsp") -- source lua/user/lsp/init.lua
 require("user.telescope") -- source lua/user/telescope.lua

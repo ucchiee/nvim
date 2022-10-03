@@ -109,12 +109,7 @@ return packer.startup({
 		use("glepnir/lspsaga.nvim")
 		use("ray-x/lsp_signature.nvim")
 		use("folke/trouble.nvim")
-		use({
-			"rmagatti/goto-preview",
-			config = function()
-				require("goto-preview").setup({})
-			end,
-		})
+		use({ "rmagatti/goto-preview" })
 
 		-- Telescope
 		use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } })
@@ -134,7 +129,6 @@ return packer.startup({
 			run = ":TSUpdate",
 		})
 		use("JoosepAlviste/nvim-ts-context-commentstring")
-		use("lewis6991/spellsitter.nvim")
 
 		-- Git
 		use("lewis6991/gitsigns.nvim")
@@ -189,6 +183,6 @@ return packer.startup({
 		end
 	end,
 	config = {
-		max_jobs = 10,
+		max_jobs = 16,
 	},
 })

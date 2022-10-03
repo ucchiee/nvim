@@ -42,5 +42,6 @@ require("user.vim-asterisk") -- source lua/user/vim-asterisk.lua
 require("user.lspsaga") -- source lua/user/lspsaga.lua
 require("user.lsp_signature") -- source lua/user/lsp_signature.lua
 require("user.trouble") -- source lua/user/lsp_signature.lua
+require("user.goto-preview") -- source lua/user/goto-preview.lua
 require("user.femaco") -- source lua/user.femaco.lua
 require("user.commands")

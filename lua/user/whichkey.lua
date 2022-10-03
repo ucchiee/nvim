@@ -144,7 +144,7 @@ local mappings = {
 		a = { "<cmd>Lspsaga code_action<CR>", "Code Action" },
 		d = { ":Telescope lsp_definitions<cr>", "Definitions" },
 		D = { ":Telescope diagnostics<cr>", "Diagnostics" },
-		F = { "<cmd>lua vim.lsp.buf.format { async = true }<cr>", "Format" },
+		F = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
 		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
 		j = { "<cmd>Lspsaga diagnostic_jump_next<CR>", "Next Diagnostic" },

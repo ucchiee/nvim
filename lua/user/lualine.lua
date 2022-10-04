@@ -82,20 +82,6 @@ local lsp_indicator = {
 -- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 -- end
 
-local navic_ok, navic = pcall(require, "nvim-navic")
-local navic_status = {
-  function()
-    if navic_ok then
-      return navic.get_location({ highlight = true })
-    else
-      return ""
-    end
-  end,
-  color = { fg = "#ffffff", gui = "bold" },
-  padding = 3,
-  cond = navic.is_available,
-}
-
 local mixed_indent = {
   function()
     local space_pat = [[\v^ +]]
@@ -144,7 +130,7 @@ lualine.setup({
   sections = {
     lualine_a = { mode },
     lualine_b = { branch },
-    lualine_c = { diff, navic_status },
+    lualine_c = { diff },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = {
       diagnostics,

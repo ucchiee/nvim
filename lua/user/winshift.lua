@@ -61,7 +61,7 @@ winshift.setup({
 	end,
 })
 
-vim.keymap.set("n", "<C-W>m", "<Cmd>WinShift<CR>", { noremap = true })
+vim.keymap.set("n", "<C-W>m", "<Cmd>WinShift<CR>", { noremap = true, desc = "WinShift"})
 -- This command is broken
 -- vim.keymap.set("n", "<C-W>x", "<Cmd>WinShift swap<CR>", { noremap = true })
 vim.keymap.set("n", "<C-M-h>", "<Cmd>WinShift left<CR>", { noremap = true })

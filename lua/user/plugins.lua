@@ -151,9 +151,6 @@ return packer.startup({
 		-- Folding
 		use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
-		-- Scrolling
-		-- use("karb94/neoscroll.nvim")
-
 		-- syntax tree surfer
 		use("ziontee113/syntax-tree-surfer")
 

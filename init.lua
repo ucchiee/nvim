@@ -25,7 +25,6 @@ require("user.indentline") -- source lua/user/indentline.lua
 require("user.dap") -- source lua/user/dap/init.lua
 require("user.betterescape") -- source lua/user/betterescape.lua
 require("user.nvim-ufo") -- source lua/user/nvim-ufo.lua
-require("user.neoscroll") -- source lua/user/neoscroll.lua
 require("user.tree-surfer") -- source lua/user/tree-surfer.lua
 require("user.symbol-outline") -- source lua/user/symbol-outline.lua
 require("user.gitlinker") -- source lua/user/gitlinker.lua

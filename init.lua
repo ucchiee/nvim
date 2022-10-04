@@ -43,4 +43,5 @@ require("user.lsp_signature") -- source lua/user/lsp_signature.lua
 require("user.trouble") -- source lua/user/lsp_signature.lua
 require("user.goto-preview") -- source lua/user/goto-preview.lua
 require("user.femaco") -- source lua/user.femaco.lua
+require("user.overseer") -- source lua/user/overseer.lua
 require("user.commands")

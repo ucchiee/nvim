@@ -175,6 +175,9 @@ return packer.startup({
 		use("zdcthomas/medit")
 		use("haya14busa/vim-asterisk")
 
+    -- Task Runner
+    use("stevearc/overseer.nvim")
+
 		-- Automatically set up your configuration after cloning packer.nvim
 		-- Put this at the end after all plugins
 		if PACKER_BOOTSTRAP then

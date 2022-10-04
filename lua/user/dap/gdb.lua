@@ -14,6 +14,17 @@ elseif string.match(os, "Darwin") then
 	dap_path = "/Users/uu/" .. dap_path
 end
 
+-- useful function
+local get_executable = function()
+	return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+end
+local get_args = function()
+	return { vim.fn.input("Arguments of executable: ") }
+end
+local get_pid = function()
+	return vim.fn.input("pid to attach: ")
+end
+
 dap.adapters.cppdbg = {
 	id = "cppdbg",
 	type = "executable",
@@ -25,14 +36,27 @@ dap.configurations.cpp = {
 		name = "Launch file",
 		type = "cppdbg",
 		request = "launch",
-		program = function()
-			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-		end,
-		args = function()
-			return { vim.fn.input("Arguments of executable: ") }
-		end,
+		program = get_executable,
+		args = get_args,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = true,
+		setupCommands = {
+			{
+				text = "-enable-pretty-printing",
+				description = "enable pretty printing",
+				ignoreFailures = false,
+			},
+		},
+	},
+	{
+		name = "Launch file (stopAtConnect)",
+		type = "cppdbg",
+		request = "launch",
+		program = get_executable,
+		args = get_args,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = true,
+		stopAtConnect = true,
 		setupCommands = {
 			{
 				text = "-enable-pretty-printing",
@@ -49,9 +73,7 @@ dap.configurations.cpp = {
 		miDebuggerServerAddress = "localhost:1234",
 		miDebuggerPath = "/usr/bin/gdb",
 		cwd = "${workspaceFolder}",
-		program = function()
-			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-		end,
+		program = get_executable,
 		setupCommands = {
 			{
 				text = "-enable-pretty-printing",
@@ -64,10 +86,13 @@ dap.configurations.cpp = {
 		-- If you get an "Operation not permitted" error using this, try disabling YAMA:
 		--  echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
 		name = "Attach to process",
-		type = "cpp", -- Adjust this to match your adapter name (`dap.adapters.<name>`)
+		type = "cppdbg", -- Adjust this to match your adapter name (`dap.adapters.<name>`)
 		request = "attach",
-		pid = require("dap.utils").pick_process,
+		-- processId = require("dap.utils").pick_process,
+		processId = get_pid,
+		program = get_executable,
 		args = {},
+		stopAtConnect = true,
 		setupCommands = {
 			{
 				text = "-enable-pretty-printing",

@@ -48,19 +48,19 @@ vim.opt.listchars:append("tab:  ")
 vim.opt.listchars:append("trail:-")
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
-vim.cmd("lang en_US.UTF-8")
+-- vim.cmd("lang en_US.UTF-8")
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
-vim.cmd([[
-  set nocp                    " 'compatible' is not set
-  filetype plugin on          " plugins are enabled
-  let g:netrw_banner=0        " disable annoying banner
-  let g:netrw_browse_split=4  " open in prior window
-  let g:netrw_altv=1          " open splits to the right
-  let g:netrw_liststyle=3     " tree view
-  let g:netrw_list_hide=netrw_gitignore#Hide()
-  let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-]])
+-- vim.cmd([[
+--   set nocp                    " 'compatible' is not set
+--   filetype plugin on          " plugins are enabled
+--   let g:netrw_banner=0        " disable annoying banner
+--   let g:netrw_browse_split=4  " open in prior window
+--   let g:netrw_altv=1          " open splits to the right
+--   let g:netrw_liststyle=3     " tree view
+--   let g:netrw_list_hide=netrw_gitignore#Hide()
+--   let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+-- ]])
 
 -- IME settings
 -- TODO:this assumes MacOS, need to check OS
@@ -72,8 +72,8 @@ vim.cmd([[
 -- ]])
 
 -- cursor settings
-vim.cmd([[
-  let &t_SI .= "\e[5 q"   " Start Insert
-  let &t_SR .= "\e[3 q"   " Start Replace
-  let &t_EI .= "\e[1 q"   " End Insert/Replace
-]])
+-- vim.cmd([[
+--   let &t_SI .= "\e[5 q"   " Start Insert
+--   let &t_SR .= "\e[3 q"   " Start Replace
+--   let &t_EI .= "\e[1 q"   " End Insert/Replace
+-- ]])

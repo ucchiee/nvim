@@ -182,6 +182,7 @@ local mappings = {
 		k = { ":Telescope keymaps<cr>", "Keymaps" },
 		r = { ":Telescope oldfiles<cr>", "Open Recent File" },
 		C = { ":Telescope commands<cr>", "Commands" },
+		m = { ":Telescope marks<cr>", "Marks" },
 		M = { ":Telescope man_pages<cr>", "Man Pages" },
 		R = { ":Telescope registers<cr>", "Registers" },
 		f = { ":Telescope find_files<cr>", "Find files" },

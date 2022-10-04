@@ -45,6 +45,7 @@ return packer.startup({
 		use("lewis6991/impatient.nvim")
 		use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 		use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+    use("rcarriga/nvim-notify")
 		use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 		use("windwp/nvim-ts-autotag") -- AutoTag, integrates with treesitter
 		use("numToStr/Comment.nvim") -- Easily comment stuff

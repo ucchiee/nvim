@@ -2,3 +2,4 @@ autoload*
 tags
 
 plugin/packer_compiled.lua
+dap-related

@@ -45,6 +45,8 @@ keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch!<CR>", opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 keymap("i", "<C-C>", "<ESC>", opts)
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
 
 -- Move text up and down
 keymap("n", "\\", ":m .+1<CR>", opts)

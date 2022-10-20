@@ -64,6 +64,7 @@ return packer.startup({
 		-- debug adapter protocol
 		use({ "mfussenegger/nvim-dap" })
 		use({ "rcarriga/nvim-dap-ui" })
+		use("mfussenegger/nvim-dap-python")
 
 		-- status line
 		use("nvim-lualine/lualine.nvim")

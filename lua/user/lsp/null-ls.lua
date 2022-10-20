@@ -12,10 +12,11 @@ local black_config = { "--fast", "-l", "120" }
 local flake8_config = {
 	"--max-line-length",
 	"120",
-	"--ignore=E402,E203,E501,W503",
+	"--ignore=E402",
 	"--exclude=__init__.py",
 }
 local isort_config = { "--profile", "black" }
+local mypy_config = { "--ignore-missing-imports" }
 
 null_ls.setup({
 	debug = false,
@@ -27,5 +28,6 @@ null_ls.setup({
 		formatting.stylua,
 		-- linter
 		diagnostics.flake8.with({ extra_args = flake8_config }),
+		diagnostics.mypy.with({ extra_args = mypy_config }),
 	},
 })

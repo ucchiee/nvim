@@ -4,14 +4,16 @@ if not status_ok then
 end
 
 local handle = io.popen("uname -s")
-local os = handle:read("*a")
+local os_name = handle:read("*a")
 handle:close()
 
-local dap_path = ".config/nvim/dap-related/extension/debugAdapters/bin/OpenDebugAD7"
-if string.match(os, "Linux") then
-	dap_path = "/home/uu/" .. dap_path
-elseif string.match(os, "Darwin") then
-	dap_path = "/Users/uu/" .. dap_path
+local dap_path = os.getenv("HOME") .. "/.local/share/nvim/mason/bin/OpenDebugAD7"
+
+local gdb_path
+if string.match(os_name, "Linux") then
+	gdb_path = "/usr/bin/gdb"
+elseif string.match(os_name, "Darwin") then
+	gdb_path = "/usr/local/bin/gdb"
 end
 
 dap.adapters.cppdbg = {
@@ -47,7 +49,7 @@ dap.configurations.cpp = {
 		request = "launch",
 		MIMode = "gdb",
 		miDebuggerServerAddress = "localhost:1234",
-		miDebuggerPath = "/usr/bin/gdb",
+		miDebuggerPath = gdb_path,
 		cwd = "${workspaceFolder}",
 		program = function()
 			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")

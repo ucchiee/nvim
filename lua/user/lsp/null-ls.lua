@@ -22,10 +22,14 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		-- formatter
-		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		formatting.prettier.with({
+			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+			--[[ disabled_filetypes = { "markdown" }, ]]
+		}),
 		formatting.black.with({ extra_args = black_config }),
 		formatting.isort.with({ extra_args = isort_config }),
 		formatting.stylua,
+		--[[ null_ls.builtins.formatting.remark, ]]
 		-- linter
 		diagnostics.flake8.with({ extra_args = flake8_config }),
 		diagnostics.mypy.with({ extra_args = mypy_config }),

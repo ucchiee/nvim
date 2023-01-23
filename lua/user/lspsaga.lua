@@ -3,7 +3,7 @@ if not ok then
   return
 end
 
-lspsaga.init_lsp_saga({
+lspsaga.setup({
   border_style = "rounded",
   symbol_in_winbar = {
     enable = false,

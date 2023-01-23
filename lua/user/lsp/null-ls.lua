@@ -8,15 +8,15 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 
-local black_config = { "--fast", "-l", "120" }
+local black_config = { "--fast", "-l", "89" }
 local flake8_config = {
 	"--max-line-length",
-	"120",
+	"89",
 	"--ignore=E402",
 	"--exclude=__init__.py",
 }
 local isort_config = { "--profile", "black" }
-local mypy_config = { "--ignore-missing-imports" }
+local mypy_config = { "--ignore-missing-imports", "--strict"}
 
 null_ls.setup({
 	debug = false,

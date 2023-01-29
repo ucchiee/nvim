@@ -1,47 +1,47 @@
-require("user.options") -- source lua/user/options.lua
-require("user.filetype") -- source lua/user/filetype.lua
-require("user.keymaps") -- source lua/user/keymaps.lua
-require("user.plugins") -- source lua/user/plugins.lua
-require("user.impatient") -- source lua/user/impatient.lua
-require("user.colorscheme") -- source lua/user/colorscheme.lua
-require("user.navic") -- source ./lua/user/navic.lua
-require("user.cmp") -- source lua/user/cmp.lua
-require("user.lsp") -- source lua/user/lsp/init.lua
-require("user.telescope") -- source lua/user/telescope.lua
-require("user.floaterm") --source lua/user/floaterm.lua
-require("user.treesitter") -- source lua/user/treesitter.lua
-require("user.autopairs") -- source lua/user/autopairs.lua
-require("user.autotag") -- source lua/user/autotag.lua
-require("user.comment") -- ousrce lua/user/comment.lua
-require("user.gitsigns") -- source lua/user/gitsigns.lua
-require("user.nvim-tree") -- source lua/user/nvim-tree.lua
-require("user.bufferline") -- source lua/user/bufferline.lua
-require("user.lualine") -- source lua/user/lualine.lua
-require("user.project") -- source lua/user/project.lua
-require("user.alpha") -- source lua/user/alpha.lua
-require("user.whichkey") -- source lua/user/whichkey.lua
-require("user.colorizer") -- source lua/user/colorizer.lua
-require("user.indentline") -- source lua/user/indentline.lua
-require("user.dap") -- source lua/user/dap/init.lua
-require("user.betterescape") -- source lua/user/betterescape.lua
-require("user.nvim-ufo") -- source lua/user/nvim-ufo.lua
-require("user.neoscroll") -- source lua/user/neoscroll.lua
-require("user.tree-surfer") -- source lua/user/tree-surfer.lua
-require("user.symbol-outline") -- source lua/user/symbol-outline.lua
-require("user.gitlinker") -- source lua/user/gitlinker.lua
-require("user.todo-comments") -- source lua/user/todo-comments.lua
-require("user.winshift") -- source lua/user/winshift.lua
-require("user.dial") -- source lua/user/dial.lua
-require("user.hlslens") -- source lua/user/hlslens.lua
-require("user.fidget") -- source lua/user/fidget.lua
-require("user.scrollbar") -- source lua/user/scrollbar.lua
-require("user.mathup") -- source lua/user/mathup.lua
-require("user.neogen") -- source lua/user/neogen.lua
-require("user.indent_blankline") -- source lua/user/indent_blankline.lua
-require("user.vim-asterisk") -- source lua/user/vim-asterisk.lua
-require("user.lspsaga") -- source lua/user/lspsaga.lua
-require("user.lsp_signature") -- source lua/user/lsp_signature.lua
-require("user.trouble") -- source lua/user/lsp_signature.lua
-require("user.goto-preview") -- source lua/user/goto-preview.lua
-require("user.femaco") -- source lua/user.femaco.lua
+require("user.options")
+require("user.filetype")
+require("user.keymaps")
+require("user.plugins")
+require("user.impatient")
+require("user.colorscheme")
+require("user.navic")
+require("user.cmp")
+require("user.lsp")
+require("user.telescope")
+require("user.floaterm")
+require("user.treesitter")
+require("user.autopairs")
+require("user.autotag")
+require("user.comment")
+require("user.gitsigns")
+require("user.nvim-tree")
+require("user.bufferline")
+require("user.lualine")
+require("user.project")
+require("user.alpha")
+require("user.whichkey")
+require("user.colorizer")
+require("user.indentline")
+require("user.dap")
+require("user.betterescape")
+require("user.nvim-ufo")
+require("user.neoscroll")
+require("user.tree-surfer")
+require("user.symbol-outline")
+require("user.gitlinker")
+require("user.todo-comments")
+require("user.winshift")
+require("user.dial")
+require("user.hlslens")
+require("user.fidget")
+require("user.scrollbar")
+require("user.mathup")
+require("user.neogen")
+require("user.indent_blankline")
+require("user.vim-asterisk")
+require("user.lspsaga")
+require("user.lsp_signature")
+require("user.trouble")
+require("user.goto-preview")
+require("user.femaco")
 require("user.commands")

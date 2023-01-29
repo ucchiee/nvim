@@ -7,6 +7,13 @@ lspsaga.setup({
 	symbol_in_winbar = {
 		enable = false,
 	},
+	outline = {
+		keys = {
+			jump = "<cr>",
+			expand_collapse = "o",
+			quit = "q",
+		},
+	},
 	ui = {
 		theme = "round",
 		-- border type can be single,double,rounded,solid,shadow.

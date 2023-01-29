@@ -10,7 +10,13 @@ configs.setup({
 	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension
-		disable = { "" }, -- list of language that will be disabled
+		disable = function(_, buf) -- first arg is `lang`
+			local max_size = 100 * 1024
+			local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+			if ok and stats and stats.size > max_size then
+				return true
+			end
+		end,
 		-- additional_vim_regex_highlighting = true,
 	},
 	indent = { enable = true, disable = { "yaml" } },

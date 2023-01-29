@@ -176,16 +176,16 @@ local mappings = {
 	},
 	s = {
 		name = "Search",
+		C = { ":Telescope colorscheme<cr>", "Colorscheme" },
+		M = { ":Telescope man_pages<cr>", "Man Pages" },
+		R = { ":Telescope registers<cr>", "Registers" },
 		b = { ":Telescope git_branches<cr>", "Checkout branch" },
-		c = { ":Telescope colorscheme<cr>", "Colorscheme" },
+		c = { ":Telescope commands<cr>", "Commands" },
 		d = { ":Telescope diagnostics<cr>", "Diagnostics" },
+		f = { ":Telescope find_files<cr>", "Find files" },
 		h = { ":Telescope help_tags<cr>", "Find Help" },
 		k = { ":Telescope keymaps<cr>", "Keymaps" },
 		r = { ":Telescope oldfiles<cr>", "Open Recent File" },
-		C = { ":Telescope commands<cr>", "Commands" },
-		M = { ":Telescope man_pages<cr>", "Man Pages" },
-		R = { ":Telescope registers<cr>", "Registers" },
-		f = { ":Telescope find_files<cr>", "Find files" },
 	},
 
 	j = {

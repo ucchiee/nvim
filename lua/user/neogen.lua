@@ -3,4 +3,13 @@ if not ok then
 	return
 end
 
-neogen.setup({ snippet_engine = "luasnip" })
+neogen.setup({
+	snippet_engine = "luasnip",
+	languages = {
+    python = {
+      template = {
+        annotation_convention = "reST",
+      }
+    }
+	},
+})

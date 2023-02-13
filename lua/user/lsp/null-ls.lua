@@ -7,6 +7,7 @@ end
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
+local code_actions = null_ls.builtins.code_actions
 
 local black_config = { "--fast", "-l", "89" }
 local flake8_config = {
@@ -33,5 +34,9 @@ null_ls.setup({
 		-- linter
 		diagnostics.flake8.with({ extra_args = flake8_config }),
 		diagnostics.mypy.with({ extra_args = mypy_config }),
+    -- shell
+    diagnostics.shellcheck,
+    --[[ code_actions.shellcheck, ]]
+    formatting.shfmt,
 	},
 })

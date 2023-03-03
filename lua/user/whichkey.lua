@@ -92,6 +92,10 @@ local mappings = {
 		"<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>",
 		"Find files",
 	},
+  ["G"] = {
+    ":Git blame<cr>",
+    "Git blame",
+  },
 	["f"] = {
 		"<cmd>lua require('telescope.builtin').find_files()<cr>",
 		"Find files",

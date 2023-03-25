@@ -161,6 +161,7 @@ local mappings = {
 		s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
 		S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" },
 		o = { "<cmd>Lspsaga outline<CR>", "Outline" },
+		c = { ":Neogen<cr>", "Generate Docstring" },
 		p = {
 			name = "Goto Preview",
 			d = { "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", "Definition" },

@@ -82,7 +82,7 @@ return packer.startup({
 		-- use("folke/tokyonight.nvim")
 		-- use("rebelot/kanagawa.nvim")
 		use("rmehri01/onenord.nvim")
-		use("ucchiee/gruvbox-material")
+		use("sainnhe/gruvbox-material")
 
 		-- cmp plugins
 		use("hrsh7th/nvim-cmp") -- The completion plugin

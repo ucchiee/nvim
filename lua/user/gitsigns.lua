@@ -1,18 +1,19 @@
 local status_ok, gitsigns = pcall(require, "gitsigns")
 if not status_ok then
-	return
+  return
 end
 
-gitsigns.setup {
+gitsigns.setup({
   signs = {
-    add = { hl = "GitSignsAdd", text = "▎", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
-    change = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
-    delete = { hl = "GitSignsDelete", text = "契", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-    topdelete = { hl = "GitSignsDelete", text = "契", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-    changedelete = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+    add = { text = "▎" },
+    change = { text = "▎" },
+    delete = { text = "_" },
+    topdelete = { text = "‾" },
+    changedelete = { text = "▎" },
+    untracked = { text = "▎" },
   },
   signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
-  numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
+  numhl = true, -- Toggle with `:Gitsigns toggle_numhl`
   linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
   keymaps = {
     -- Default keymap options
@@ -33,8 +34,8 @@ gitsigns.setup {
     -- ['n <leader>gr'] = '<cmd>lua require"gitsigns".detach()<CR><cmd>lua require"gitsigns".attach()<CR>',
 
     -- Text objects
-    ['o ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
-    ['x ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>'
+    ["o ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
+    ["x ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
   },
   word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {
@@ -67,4 +68,4 @@ gitsigns.setup {
   yadm = {
     enable = false,
   },
-}
+})

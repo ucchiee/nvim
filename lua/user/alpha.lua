@@ -27,6 +27,8 @@ dashboard.section.buttons.val = {
 	dashboard.button("z", "  Zsh Config", ":e ~/dotfiles/zsh/.config/zsh/zshrc <CR>"),
 	dashboard.button("a", "  Alacritty Config", ":e ~/dotfiles/alacritty/.config/alacritty/alacritty.yml <CR>"),
 	dashboard.button("y", "  Kitty Config", ":e ~/dotfiles/kitty/.config/kitty/kitty.conf <CR>"),
+	dashboard.button("w", "  Wezterm Config", ":e ~/dotfiles/wezterm/wezterm.lua <CR>"),
+	dashboard.button("s", "  Ssh Config", ":e ~/.ssh/config <CR>"),
 	dashboard.button("t", "  Tmux Config", ":e ~/dotfiles/tmux/.config/tmux/tmux.conf <CR>"),
 }
 

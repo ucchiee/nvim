@@ -177,6 +177,9 @@ return packer.startup({
 		use("zdcthomas/medit")
 		use("haya14busa/vim-asterisk")
 
+		-- copy and paster through OSC 52
+		use({ "ojroques/nvim-osc52" })
+
 		-- Automatically set up your configuration after cloning packer.nvim
 		-- Put this at the end after all plugins
 		if PACKER_BOOTSTRAP then

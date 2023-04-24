@@ -16,7 +16,7 @@ vim.keymap.set("n", "<leader>cc", "<leader>c_", { remap = true })
 vim.keymap.set("v", "<leader>c", require("osc52").copy_visual)
 
 function COPY()
-	if vim.v.event.operator == "y" and vim.v.event.regname == "+" then
+	if vim.v.event.operator == "y" then
 		require("osc52").copy_register("+")
 	end
 end

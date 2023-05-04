@@ -13,7 +13,7 @@ local black_config = { "--fast", "-l", "89" }
 local flake8_config = {
 	"--max-line-length",
 	"89",
-	"--ignore=E402",
+	"--extend-ignore=E203",
 	"--exclude=__init__.py",
 }
 local isort_config = { "--profile", "black" }

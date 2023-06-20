@@ -180,6 +180,8 @@ return packer.startup({
 		-- copy and paster through OSC 52
 		use({ "ojroques/nvim-osc52" })
 
+		use("postfen/clipboard-image.nvim")
+
 		-- Automatically set up your configuration after cloning packer.nvim
 		-- Put this at the end after all plugins
 		if PACKER_BOOTSTRAP then

@@ -17,7 +17,7 @@ local flake8_config = {
 	"--exclude=__init__.py",
 }
 local isort_config = { "--profile", "black" }
-local mypy_config = { "--ignore-missing-imports", "--strict"}
+local mypy_config = { "--ignore-missing-imports", "--strict" }
 
 null_ls.setup({
 	debug = false,
@@ -34,9 +34,9 @@ null_ls.setup({
 		-- linter
 		diagnostics.flake8.with({ extra_args = flake8_config }),
 		diagnostics.mypy.with({ extra_args = mypy_config }),
-    -- shell
-    diagnostics.shellcheck,
-    --[[ code_actions.shellcheck, ]]
-    formatting.shfmt,
+		-- shell
+		diagnostics.shellcheck,
+		--[[ code_actions.shellcheck, ]]
+		formatting.shfmt,
 	},
 })

@@ -81,8 +81,9 @@ return packer.startup({
 		-- use "lunarvim/darkplus.nvim"
 		-- use("folke/tokyonight.nvim")
 		-- use("rebelot/kanagawa.nvim")
-		use("rmehri01/onenord.nvim")
+		--[[ use("rmehri01/onenord.nvim") ]]
 		use("sainnhe/gruvbox-material")
+		use({ "catppuccin/nvim", as = "catppuccin" })
 
 		-- cmp plugins
 		use("hrsh7th/nvim-cmp") -- The completion plugin

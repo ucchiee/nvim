@@ -70,7 +70,6 @@ local lsp_indicator = {
 			end
 		end
 		return msg
-
 	end,
 	--[[ icon = " LSP:", ]]
 	--[[ color = { fg = "#ffffff", gui = "bold" }, ]]
@@ -149,10 +148,11 @@ local theme_list = {
 	--[[ "papercolor_light", ]]
 	"powerline",
 	"powerline_dark",
-	"seoul256",  -- 80
+	"seoul256", -- 80
 	--[[ "solarized_dark", ]]
 	--[[ "solarized_light", ]]
 	"Tomorrow",
+	"catppuccin",
 	--[[ "wombat", ]]
 }
 

@@ -23,7 +23,7 @@ mason.setup({
 })
 
 mason_lspconfig.setup({
-  ensure_installed = { "sumneko_lua", "pyright", "gopls", "clangd", "cpptools"},
+  ensure_installed = { "lua-language-server", "pyright", "gopls", "clangd", "cpptools"},
   automatic_installation = false,
 })
 

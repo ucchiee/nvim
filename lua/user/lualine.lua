@@ -124,7 +124,6 @@ local theme_list = {
 	"ayu_dark",
 	--[[ "ayu_light", ]]
 	"ayu_mirage",
-	"base16",
 	"codedark",
 	"dracula",
 	"everforest",

@@ -4,7 +4,21 @@ if not status_ok then
 end
 
 configs.setup({
-	ensure_installed = { "python", "c", "cpp", "lua", "go", "yaml", "json", "vim", "html", "css", "make", "markdown" }, -- A list of parser names, or "all"
+	ensure_installed = {
+		"python",
+		"c",
+		"cpp",
+		"lua",
+		"go",
+		"yaml",
+		"json",
+		"vim",
+		"html",
+		"css",
+		"make",
+		"markdown",
+		"markdown_inline",
+	}, -- A list of parser names, or "all"
 	sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
 	auto_install = true,
 	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing

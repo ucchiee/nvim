@@ -48,7 +48,7 @@ vim.opt.listchars:append("tab:  ")
 vim.opt.listchars:append("trail:-")
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
-vim.cmd("lang en_US.UTF-8")  -- need this option to paste japanese
+--[[ vim.cmd("lang en_US.UTF-8")  -- need this option to paste japanese ]]
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 ---@diagnostic disable-next-line: param-type-mismatch

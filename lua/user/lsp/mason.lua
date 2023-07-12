@@ -23,7 +23,7 @@ mason.setup({
 })
 
 mason_lspconfig.setup({
-  ensure_installed = { "lua-language-server", "pyright", "gopls", "clangd", "cpptools"},
+  ensure_installed = { "lua-language-server", "pyright", "gopls", "clangd", "cpptools", "prettier", "shellcheck", "shfmt"},
   automatic_installation = false,
 })
 

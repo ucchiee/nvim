@@ -136,10 +136,10 @@ require("lazy").setup({
 	"AckslD/nvim-FeMaco.lua",
 
 	-- Folding
-	{
-		"kevinhwang91/nvim-ufo",
-		dependencies = "kevinhwang91/promise-async",
-	},
+	--[[ { ]]
+	--[[ 	"kevinhwang91/nvim-ufo", ]]
+	--[[ 	dependencies = "kevinhwang91/promise-async", ]]
+	--[[ }, ]]
 
 	-- syntax tree surfer
 	"ziontee113/syntax-tree-surfer",

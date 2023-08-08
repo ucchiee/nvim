@@ -157,7 +157,14 @@ local mappings = {
 		l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
 		q = { "<cmd>lua vim.diagnostic.set_loclist()<cr>", "Quickfix" },
 		r = { ":Telescope lsp_references<cr>", "References" },
-		R = { "<cmd>Lspsaga rename<CR>", "Rename" },
+		-- R = { "<cmd>Lspsaga rename<CR>", "Rename" },  -- inc_rename, see below
+		R = {
+			function()
+				return ":IncRename " .. vim.fn.expand("<cword>")
+			end,
+			"Rename",
+			expr = true,
+		},
 		s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
 		S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Workspace Symbols" },
 		o = { "<cmd>Lspsaga outline<CR>", "Outline" },

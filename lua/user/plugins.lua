@@ -98,6 +98,7 @@ require("lazy").setup({
 	"ray-x/lsp_signature.nvim",
 	"folke/trouble.nvim",
 	"rmagatti/goto-preview",
+	{ "smjonas/inc-rename.nvim", config = true },
 
 	-- Telescope
 	{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },

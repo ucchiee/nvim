@@ -150,7 +150,7 @@ require("lazy").setup({
 	"zdcthomas/medit",
 	"haya14busa/vim-asterisk",
 
-	-- copy and paster through OSC 52
+	-- copy and paste through OSC 52
 	"ojroques/nvim-osc52",
 
 	"postfen/clipboard-image.nvim",

@@ -23,8 +23,8 @@ mason.setup({
 })
 
 mason_lspconfig.setup({
-  ensure_installed = { "pyright", "gopls", "clangd" },
-  automatic_installation = false,
+  ensure_installed = { "pyright", "gopls", "clangd", "bashls" },
+  automatic_installation = true,
 })
 
 local function set_buf_key(bufnr)

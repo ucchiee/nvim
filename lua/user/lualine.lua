@@ -4,9 +4,6 @@ if not status_ok then
 end
 
 local status_noice_ok, noice = pcall(require, "noice")
-if not status_noice_ok then
-	return
-end
 
 local hide_in_width = function()
 	return vim.fn.winwidth(0) > 80
@@ -183,11 +180,11 @@ lualine.setup({
 			diagnostics,
 			trailing_white,
 			mixed_indent,
-			{
-				status_noice_ok and noice.api.statusline.mode.get or "",
-				cond = status_noice_ok and noice.api.statusline.mode.has or false,
-				--color = { fg = "#ff9e64" },
-			},
+			--[[ { ]]
+			--[[ 	status_noice_ok and noice.api.statusline.mode.get or "", ]]
+			--[[ 	cond = status_noice_ok and noice.api.statusline.mode.has or false, ]]
+			--[[ 	--color = { fg = "#ff9e64" }, ]]
+			--[[ }, ]]
 			{ "encoding", padding = { left = 1, right = 0 } },
 			{
 				"fileformat",

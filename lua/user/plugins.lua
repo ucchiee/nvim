@@ -30,6 +30,14 @@ require("lazy").setup({
 	-- "kana/vim-textobj-user",
 	-- "kana/vim-textobj-entire",
 	"lukas-reineke/indent-blankline.nvim",
+  {
+    'nvimdev/indentmini.nvim',
+    event = 'BufEnter',
+    config = function()
+      require('indentmini').setup()
+      vim.cmd.highlight('default link IndentLine IndentBlanklineChar')
+    end,
+  },
 	--"max397574/better-escape.nvim",
 
 	-- debug adapter protocol

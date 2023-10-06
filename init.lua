@@ -1,3 +1,4 @@
+vim.loader.enable()
 require("user.options")
 require("user.filetype")
 require("user.keymaps")

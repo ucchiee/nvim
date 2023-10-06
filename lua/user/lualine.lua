@@ -159,7 +159,7 @@ local theme_list = {
 
 math.randomseed(os.time())
 local ucchiee_theme = theme_list[math.random(#theme_list)]
-vim.notify("selected lualine theme : " .. ucchiee_theme)
+-- vim.notify("selected lualine theme : " .. ucchiee_theme)
 
 lualine.setup({
 	options = {

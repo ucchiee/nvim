@@ -15,10 +15,10 @@ gitsigns.setup({
   signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
   numhl = true, -- Toggle with `:Gitsigns toggle_numhl`
   linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
-  keymaps = {
+  -- keymaps = {
     -- Default keymap options
-    noremap = true,
-    silent = false,
+    -- noremap = true,
+    -- silent = false,
 
     -- ['n ]c'] = { expr = true, "&diff ? ']c' : '<cmd>lua require\"gitsigns.actions\".next_hunk()<CR>'"},
     -- ['n [c'] = { expr = true, "&diff ? '[c' : '<cmd>lua require\"gitsigns.actions\".prev_hunk()<CR>'"},
@@ -34,9 +34,9 @@ gitsigns.setup({
     -- ['n <leader>gr'] = '<cmd>lua require"gitsigns".detach()<CR><cmd>lua require"gitsigns".attach()<CR>',
 
     -- Text objects
-    ["o ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
-    ["x ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
-  },
+    -- ["o ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
+    -- ["x ih"] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
+  -- },
   word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {
     interval = 1000,

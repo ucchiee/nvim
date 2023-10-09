@@ -17,7 +17,7 @@ local flake8_config = {
 	"--exclude=__init__.py",
 }
 local isort_config = { "--profile", "black" }
-local mypy_config = { "--ignore-missing-imports", "--strict" }
+local mypy_config = { "--ignore-missing-imports", "--strict", "--allow-untyped-calls" }
 
 null_ls.setup({
 	debug = false,

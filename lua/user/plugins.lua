@@ -62,7 +62,7 @@ require("lazy").setup({
 	-- "rebelot/kanagawa.nvim",
 	--"rmehri01/onenord.nvim",
 	"sainnhe/gruvbox-material",
-	{ "catppuccin/nvim", name = "catppuccin" },
+  { "catppuccin/nvim", name = "catppuccin", commit = "c75562c" },
 
 	-- cmp plugins
 	"hrsh7th/nvim-cmp", -- The completion plugin

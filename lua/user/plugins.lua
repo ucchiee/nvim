@@ -29,7 +29,7 @@ require("lazy").setup({
 	"norcalli/nvim-colorizer.lua",
 	-- "kana/vim-textobj-user",
 	-- "kana/vim-textobj-entire",
-	"lukas-reineke/indent-blankline.nvim",
+	-- "lukas-reineke/indent-blankline.nvim",
   {
     'nvimdev/indentmini.nvim',
     event = 'BufEnter',

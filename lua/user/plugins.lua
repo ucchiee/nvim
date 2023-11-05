@@ -161,4 +161,7 @@ require("lazy").setup({
 	"ojroques/nvim-osc52",
 
 	"postfen/clipboard-image.nvim",
+
+  -- ascii drawing
+  "jbyuki/venn.nvim",
 })

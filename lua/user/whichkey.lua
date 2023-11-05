@@ -103,8 +103,8 @@ local mappings = {
 	["t"] = { "<cmd>Telescope live_grep theme=ivy hidden=false<cr>", "Find Text" },
 	["T"] = { "<cmd>Telescope live_grep theme=ivy hidden=true<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
-	["v"] = { "<C-w>v", "Split Right" },
-	["h"] = { "<C-w>s", "Split Down" },
+	--[[ ["v"] = { "<C-w>v", "Split Right" }, ]]
+	--[[ ["h"] = { "<C-w>s", "Split Down" }, ]]
 	["r"] = { ":so ~/.config/nvim/init.lua<cr>", "Reload init.lua" },
 	["q"] = { "<Plug>MEdit", "Edit Macros" },
 

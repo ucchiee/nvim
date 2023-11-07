@@ -24,6 +24,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("=", "=============================================", ""),
 	dashboard.button("i", "  Neovim Config", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("d", "  Dotfiles README", ":e ~/dotfiles/README.md <CR>"),
+	dashboard.button("z", "  Zsh Config", ":e ~/dotfiles/zsh/.config/zsh/zshrc <CR>"),
 	dashboard.button("s", "  Ssh Config", ":e ~/.ssh/config <CR>"),
 }
 

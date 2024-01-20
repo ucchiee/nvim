@@ -17,11 +17,11 @@ npairs.setup({
 	fast_wrap = {},
 })
 
-local status_ok_rule, Rule = pcall(require, "nvim-autopairs.rule")
-if not status_ok_rule then
-	return
-end
-npairs.add_rule(Rule("$$", "$$", "tex"))
+--[[ local status_ok_rule, Rule = pcall(require, "nvim-autopairs.rule") ]]
+--[[ if not status_ok_rule then ]]
+--[[ 	return ]]
+--[[ end ]]
+--[[ npairs.add_rule(Rule("$$", "$$", "tex")) ]]
 
 
 -- local Rule = require("nvim-autopairs.rule")

@@ -27,6 +27,7 @@ null_ls.setup({
 			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
 			--[[ disabled_filetypes = { "markdown" }, ]]
 		}),
+		formatting.latexindent,
 		formatting.black.with({ extra_args = black_config }),
 		formatting.isort.with({ extra_args = isort_config }),
 		formatting.stylua,

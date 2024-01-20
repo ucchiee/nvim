@@ -83,7 +83,7 @@ require("lazy").setup({
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig", -- enable LSP
-	"jose-elias-alvarez/null-ls.nvim", -- for formatters and linters
+	"nvimtools/none-ls.nvim", -- for formatters and linters
 	"folke/lsp-colors.nvim",
 	"j-hui/fidget.nvim",
 	"glepnir/lspsaga.nvim",

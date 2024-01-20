@@ -203,6 +203,7 @@ local mappings = {
 	j = {
 		name = "Terminal",
 		[";"] = { "<cmd>FloatermToggle<cr>", "Float" },
+		["n"] = { "<cmd>FloatermNew<cr>", "FloatNew" },
 		["h"] = { ":new<cr>:ter<cr>i", "Horizontal" },
 		["v"] = { ":vnew<cr>:ter<cr>i", "Vertical" },
 		["s"] = { "<cmd>FloatermNew ncdu<cr>", "ncdu" },

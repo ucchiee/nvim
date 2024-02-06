@@ -39,5 +39,7 @@ null_ls.setup({
 		diagnostics.shellcheck,
 		--[[ code_actions.shellcheck, ]]
 		formatting.shfmt,
+		-- JS/TS
+		formatting.biome,
 	},
 })

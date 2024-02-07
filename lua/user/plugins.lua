@@ -29,15 +29,15 @@ require("lazy").setup({
 	"norcalli/nvim-colorizer.lua",
 	-- "kana/vim-textobj-user",
 	-- "kana/vim-textobj-entire",
-	-- "lukas-reineke/indent-blankline.nvim",
-  {
-    'nvimdev/indentmini.nvim',
-    event = 'BufEnter',
-    config = function()
-      require('indentmini').setup()
-      vim.cmd.highlight('default link IndentLine IndentBlanklineChar')
-    end,
-  },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	-- {
+	--   'nvimdev/indentmini.nvim',
+	--   event = 'BufEnter',
+	--   config = function()
+	--     require('indentmini').setup()
+	--     vim.cmd.highlight('default link IndentLine IndentBlanklineChar')
+	--   end,
+	-- },
 	--"max397574/better-escape.nvim",
 
 	-- debug adapter protocol
@@ -62,7 +62,7 @@ require("lazy").setup({
 	-- "rebelot/kanagawa.nvim",
 	--"rmehri01/onenord.nvim",
 	"sainnhe/gruvbox-material",
-  { "catppuccin/nvim", name = "catppuccin", commit = "c75562c" },
+	{ "catppuccin/nvim", name = "catppuccin", commit = "c75562c" },
 
 	-- cmp plugins
 	"hrsh7th/nvim-cmp", -- The completion plugin
@@ -162,6 +162,6 @@ require("lazy").setup({
 
 	"postfen/clipboard-image.nvim",
 
-  -- ascii drawing
-  "jbyuki/venn.nvim",
+	-- ascii drawing
+	"jbyuki/venn.nvim",
 })

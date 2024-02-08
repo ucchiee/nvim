@@ -23,7 +23,7 @@ mason.setup({
 })
 
 mason_lspconfig.setup({
-	ensure_installed = { "pyright", "gopls", "clangd", "bashls", "biome" },
+	ensure_installed = { "pyright", "gopls", "clangd", "bashls", "biome", "typescript-language-server" },
 	automatic_installation = true,
 })
 

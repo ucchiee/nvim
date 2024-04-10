@@ -33,7 +33,7 @@ null_ls.setup({
 		formatting.stylua,
 		--[[ null_ls.builtins.formatting.remark, ]]
 		-- linter
-		diagnostics.flake8.with({ extra_args = flake8_config }),
+		-- diagnostics.flake8.with({ extra_args = flake8_config }),
 		diagnostics.mypy.with({ extra_args = mypy_config }),
 		-- shell
 		diagnostics.shellcheck,

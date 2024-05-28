@@ -163,4 +163,10 @@ require("lazy").setup({
 
 	-- ascii drawing
 	"jbyuki/venn.nvim",
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  }
 })

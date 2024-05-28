@@ -18,7 +18,6 @@ require("lazy").setup({
 	"nvim-lua/plenary.nvim", -- Useful lua functions used ny lots of plugins
 	"windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
 	"windwp/nvim-ts-autotag", -- AutoTag, integrates with treesitter
-	"numToStr/Comment.nvim", -- Easily comment stuff
 	"kyazdani42/nvim-web-devicons",
 	"kyazdani42/nvim-tree.lua",
 	"akinsho/bufferline.nvim",
@@ -109,7 +108,7 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 	},
-	"JoosepAlviste/nvim-ts-context-commentstring",
+	-- "JoosepAlviste/nvim-ts-context-commentstring",
 
 	-- Git
 	"lewis6991/gitsigns.nvim",

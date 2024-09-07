@@ -92,6 +92,9 @@ telescope.setup({
 		find_files = {
 			hidden = true,
 		},
+    live_grep = {
+      glob_pattern = "!*/build/*"
+    }
 	},
 	extensions = {
 		media_files = {
